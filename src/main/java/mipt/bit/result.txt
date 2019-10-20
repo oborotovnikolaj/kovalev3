@@ -1,0 +1,3624 @@
+MyBenchmark.testCounterAtomicLong    avgt    3  0,429 ± 0,067   s/op
+MyBenchmark.testCounterBakery        avgt    3  1,616 ± 1,246   s/op
+MyBenchmark.testCounterLock          avgt    3  0,493 ± 0,191   s/op
+MyBenchmark.testCounterQueue         avgt    3  0,519 ± 0,243   s/op
+MyBenchmark.testCounterSemaphore     avgt    3  0,493 ± 0,583   s/op
+MyBenchmark.testCounterSynchronized  avgt    3  0,481 ± 0,499   s/op
+
+
+
+"C:\Program Files\Java\jdk-11.0.1\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.2\lib\idea_rt.jar=59429:C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.2\bin" -Dfile.encoding=UTF-8 -classpath C:\Users\oboro\.m2\repository\mysql-connector-java-5.1.47-bin.jar;C:\Users\oboro\.m2\repository\jregex1.2_01.jar;C:\Users\oboro\IdeaProjects\kovalev3\target\classes;C:\Users\oboro\.m2\repository\org\openjdk\jmh\jmh-core\1.21\jmh-core-1.21.jar;C:\Users\oboro\.m2\repository\net\sf\jopt-simple\jopt-simple\4.6\jopt-simple-4.6.jar;C:\Users\oboro\.m2\repository\org\apache\commons\commons-math3\3.2\commons-math3-3.2.jar;C:\Users\oboro\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\oboro\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar mipt.bit.MyBenchmark
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.openjdk.jmh.util.Utils (file:/C:/Users/oboro/.m2/repository/org/openjdk/jmh/jmh-core/1.21/jmh-core-1.21.jar) to field java.io.PrintStream.charOut
+WARNING: Please consider reporting this to the maintainers of org.openjdk.jmh.util.Utils
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+# JMH version: 1.21
+# VM version: JDK 11.0.1, Java HotSpot(TM) 64-Bit Server VM, 11.0.1+13-LTS
+# VM invoker: C:\Program Files\Java\jdk-11.0.1\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.2\lib\idea_rt.jar=59429:C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.2\bin -Dfile.encoding=UTF-8
+# Warmup: 3 iterations, 10 s each
+# Measurement: 10 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: mipt.bit.MyBenchmark.testCounterAtomicLong
+
+# Run progress: 0,00% complete, ETA 01:57:00
+# Fork: 1 of 3
+# Warmup Iteration   1: 2,436 ops/s
+# Warmup Iteration   2: 2,497 ops/s
+# Warmup Iteration   3: 2,416 ops/s
+Iteration   1: 2,369 ops/s
+Iteration   2: 2,351 ops/s
+Iteration   3: 2,305 ops/s
+Iteration   4: 2,309 ops/s
+Iteration   5: 2,390 ops/s
+Iteration   6: 2,190 ops/s
+Iteration   7: 2,333 ops/s
+Iteration   8: 2,166 ops/s
+Iteration   9: 1,978 ops/s
+Iteration  10: 2,079 ops/s
+
+# Run progress: 1,85% complete, ETA 01:58:41
+# Fork: 2 of 3
+# Warmup Iteration   1: 2,371 ops/s
+# Warmup Iteration   2: 2,453 ops/s
+# Warmup Iteration   3: 2,209 ops/s
+Iteration   1: 2,218 ops/s
+Iteration   2: 2,197 ops/s
+Iteration   3: 2,189 ops/s
+Iteration   4: 2,222 ops/s
+Iteration   5: 1,946 ops/s
+Iteration   6: 1,893 ops/s
+Iteration   7: 2,011 ops/s
+Iteration   8: 1,933 ops/s
+Iteration   9: 1,756 ops/s
+Iteration  10: 1,691 ops/s
+
+# Run progress: 3,70% complete, ETA 01:57:15
+# Fork: 3 of 3
+# Warmup Iteration   1: 2,433 ops/s
+# Warmup Iteration   2: 2,463 ops/s
+# Warmup Iteration   3: 2,406 ops/s
+Iteration   1: 2,296 ops/s
+Iteration   2: 2,326 ops/s
+Iteration   3: 2,375 ops/s
+Iteration   4: 2,289 ops/s
+Iteration   5: 2,298 ops/s
+Iteration   6: 2,311 ops/s
+Iteration   7: 2,360 ops/s
+Iteration   8: 1,909 ops/s
+Iteration   9: 1,954 ops/s
+Iteration  10: 1,999 ops/s
+
+
+Result "mipt.bit.MyBenchmark.testCounterAtomicLong":
+  2,155 ±(99.9%) 0,133 ops/s [Average]
+  (min, avg, max) = (1,691, 2,155, 2,390), stdev = 0,199
+  CI (99.9%): [2,022, 2,288] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 11.0.1, Java HotSpot(TM) 64-Bit Server VM, 11.0.1+13-LTS
+# VM invoker: C:\Program Files\Java\jdk-11.0.1\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.2\lib\idea_rt.jar=59429:C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.2\bin -Dfile.encoding=UTF-8
+# Warmup: 3 iterations, 10 s each
+# Measurement: 10 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: mipt.bit.MyBenchmark.testCounterBakery
+
+# Run progress: 5,56% complete, ETA 01:54:58
+# Fork: 1 of 3
+# Warmup Iteration   1: 0,568 ops/s
+# Warmup Iteration   2: 0,586 ops/s
+# Warmup Iteration   3: 0,525 ops/s
+Iteration   1: 0,669 ops/s
+Iteration   2: 0,611 ops/s
+Iteration   3: 0,654 ops/s
+Iteration   4: 0,614 ops/s
+Iteration   5: 0,674 ops/s
+Iteration   6: 0,670 ops/s
+Iteration   7: 0,623 ops/s
+Iteration   8: 0,704 ops/s
+Iteration   9: 0,651 ops/s
+Iteration  10: 0,688 ops/s
+
+# Run progress: 7,41% complete, ETA 01:54:09
+# Fork: 2 of 3
+# Warmup Iteration   1: 0,514 ops/s
+# Warmup Iteration   2: 0,636 ops/s
+# Warmup Iteration   3: 0,598 ops/s
+Iteration   1: 0,591 ops/s
+Iteration   2: 0,612 ops/s
+Iteration   3: 0,686 ops/s
+Iteration   4: 0,652 ops/s
+Iteration   5: 0,636 ops/s
+Iteration   6: 0,677 ops/s
+Iteration   7: 0,684 ops/s
+Iteration   8: 0,662 ops/s
+Iteration   9: 0,662 ops/s
+Iteration  10: 0,648 ops/s
+
+# Run progress: 9,26% complete, ETA 01:52:25
+# Fork: 3 of 3
+# Warmup Iteration   1: 0,588 ops/s
+# Warmup Iteration   2: 0,676 ops/s
+# Warmup Iteration   3: 0,570 ops/s
+Iteration   1: 0,665 ops/s
+Iteration   2: 0,660 ops/s
+Iteration   3: 0,654 ops/s
+Iteration   4: 0,672 ops/s
+Iteration   5: 0,599 ops/s
+Iteration   6: 0,677 ops/s
+Iteration   7: 0,672 ops/s
+Iteration   8: 0,638 ops/s
+Iteration   9: 0,664 ops/s
+Iteration  10: 0,699 ops/s
+
+
+Result "mipt.bit.MyBenchmark.testCounterBakery":
+  0,656 ±(99.9%) 0,019 ops/s [Average]
+  (min, avg, max) = (0,591, 0,656, 0,704), stdev = 0,029
+  CI (99.9%): [0,636, 0,675] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 11.0.1, Java HotSpot(TM) 64-Bit Server VM, 11.0.1+13-LTS
+# VM invoker: C:\Program Files\Java\jdk-11.0.1\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.2\lib\idea_rt.jar=59429:C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.2\bin -Dfile.encoding=UTF-8
+# Warmup: 3 iterations, 10 s each
+# Measurement: 10 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: mipt.bit.MyBenchmark.testCounterLock
+
+# Run progress: 11,11% complete, ETA 01:50:14
+# Fork: 1 of 3
+# Warmup Iteration   1: 2,043 ops/s
+# Warmup Iteration   2: 2,217 ops/s
+# Warmup Iteration   3: 2,149 ops/s
+Iteration   1: 2,098 ops/s
+Iteration   2: 2,148 ops/s
+Iteration   3: 1,992 ops/s
+Iteration   4: 2,073 ops/s
+Iteration   5: 2,041 ops/s
+Iteration   6: 2,083 ops/s
+Iteration   7: 1,911 ops/s
+Iteration   8: 1,939 ops/s
+Iteration   9: 1,981 ops/s
+Iteration  10: 2,063 ops/s
+
+# Run progress: 12,96% complete, ETA 01:47:35
+# Fork: 2 of 3
+# Warmup Iteration   1: 2,096 ops/s
+# Warmup Iteration   2: 2,242 ops/s
+# Warmup Iteration   3: 2,165 ops/s
+Iteration   1: 2,225 ops/s
+Iteration   2: 1,984 ops/s
+Iteration   3: 2,174 ops/s
+Iteration   4: 2,090 ops/s
+Iteration   5: 1,886 ops/s
+Iteration   6: 1,973 ops/s
+Iteration   7: 1,898 ops/s
+Iteration   8: 1,837 ops/s
+Iteration   9: 1,852 ops/s
+Iteration  10: 1,845 ops/s
+
+# Run progress: 14,81% complete, ETA 01:45:15
+# Fork: 3 of 3
+# Warmup Iteration   1: 2,060 ops/s
+# Warmup Iteration   2: 2,180 ops/s
+# Warmup Iteration   3: 2,053 ops/s
+Iteration   1: 2,038 ops/s
+Iteration   2: 1,938 ops/s
+Iteration   3: 2,129 ops/s
+Iteration   4: 1,887 ops/s
+Iteration   5: 2,056 ops/s
+Iteration   6: 1,864 ops/s
+Iteration   7: 1,785 ops/s
+Iteration   8: 1,866 ops/s
+Iteration   9: 1,710 ops/s
+Iteration  10: 1,693 ops/s
+
+
+Result "mipt.bit.MyBenchmark.testCounterLock":
+  1,969 ±(99.9%) 0,089 ops/s [Average]
+  (min, avg, max) = (1,693, 1,969, 2,225), stdev = 0,133
+  CI (99.9%): [1,879, 2,058] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 11.0.1, Java HotSpot(TM) 64-Bit Server VM, 11.0.1+13-LTS
+# VM invoker: C:\Program Files\Java\jdk-11.0.1\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.2\lib\idea_rt.jar=59429:C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.2\bin -Dfile.encoding=UTF-8
+# Warmup: 3 iterations, 10 s each
+# Measurement: 10 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: mipt.bit.MyBenchmark.testCounterQueue
+
+# Run progress: 16,67% complete, ETA 01:42:49
+# Fork: 1 of 3
+# Warmup Iteration   1: 1,793 ops/s
+# Warmup Iteration   2: 1,918 ops/s
+# Warmup Iteration   3: 1,884 ops/s
+Iteration   1: 1,841 ops/s
+Iteration   2: 1,861 ops/s
+Iteration   3: 1,842 ops/s
+Iteration   4: 1,722 ops/s
+Iteration   5: 1,817 ops/s
+Iteration   6: 1,640 ops/s
+Iteration   7: 1,734 ops/s
+Iteration   8: 1,631 ops/s
+Iteration   9: 1,642 ops/s
+Iteration  10: 1,539 ops/s
+
+# Run progress: 18,52% complete, ETA 01:40:27
+# Fork: 2 of 3
+# Warmup Iteration   1: 1,799 ops/s
+# Warmup Iteration   2: 1,976 ops/s
+# Warmup Iteration   3: 1,869 ops/s
+Iteration   1: 1,817 ops/s
+Iteration   2: 1,769 ops/s
+Iteration   3: 1,826 ops/s
+Iteration   4: 1,775 ops/s
+Iteration   5: 1,775 ops/s
+Iteration   6: 1,681 ops/s
+Iteration   7: 1,694 ops/s
+Iteration   8: 1,812 ops/s
+Iteration   9: 1,883 ops/s
+Iteration  10: 1,796 ops/s
+
+# Run progress: 20,37% complete, ETA 01:38:01
+# Fork: 3 of 3
+# Warmup Iteration   1: 2,049 ops/s
+# Warmup Iteration   2: 2,071 ops/s
+# Warmup Iteration   3: 2,004 ops/s
+Iteration   1: 1,995 ops/s
+Iteration   2: 1,949 ops/s
+Iteration   3: 1,906 ops/s
+Iteration   4: 1,866 ops/s
+Iteration   5: 1,892 ops/s
+Iteration   6: 1,816 ops/s
+Iteration   7: 1,768 ops/s
+Iteration   8: 1,794 ops/s
+Iteration   9: 1,728 ops/s
+Iteration  10: 1,751 ops/s
+
+
+Result "mipt.bit.MyBenchmark.testCounterQueue":
+  1,785 ±(99.9%) 0,067 ops/s [Average]
+  (min, avg, max) = (1,539, 1,785, 1,995), stdev = 0,100
+  CI (99.9%): [1,719, 1,852] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 11.0.1, Java HotSpot(TM) 64-Bit Server VM, 11.0.1+13-LTS
+# VM invoker: C:\Program Files\Java\jdk-11.0.1\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.2\lib\idea_rt.jar=59429:C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.2\bin -Dfile.encoding=UTF-8
+# Warmup: 3 iterations, 10 s each
+# Measurement: 10 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: mipt.bit.MyBenchmark.testCounterSemaphore
+
+# Run progress: 22,22% complete, ETA 01:35:39
+# Fork: 1 of 3
+# Warmup Iteration   1: 2,222 ops/s
+# Warmup Iteration   2: 2,345 ops/s
+# Warmup Iteration   3: 2,231 ops/s
+Iteration   1: 2,277 ops/s
+Iteration   2: 2,092 ops/s
+Iteration   3: 2,203 ops/s
+Iteration   4: 2,123 ops/s
+Iteration   5: 2,148 ops/s
+Iteration   6: 2,025 ops/s
+Iteration   7: 2,044 ops/s
+Iteration   8: 1,918 ops/s
+Iteration   9: 2,041 ops/s
+Iteration  10: 1,894 ops/s
+
+# Run progress: 24,07% complete, ETA 01:33:20
+# Fork: 2 of 3
+# Warmup Iteration   1: 2,180 ops/s
+# Warmup Iteration   2: 2,295 ops/s
+# Warmup Iteration   3: 2,302 ops/s
+Iteration   1: 2,143 ops/s
+Iteration   2: 1,895 ops/s
+Iteration   3: 1,989 ops/s
+Iteration   4: 1,830 ops/s
+Iteration   5: 1,926 ops/s
+Iteration   6: 1,858 ops/s
+Iteration   7: 1,748 ops/s
+Iteration   8: 1,620 ops/s
+Iteration   9: 1,588 ops/s
+Iteration  10: 1,514 ops/s
+
+# Run progress: 25,93% complete, ETA 01:30:59
+# Fork: 3 of 3
+# Warmup Iteration   1: 2,013 ops/s
+# Warmup Iteration   2: 2,099 ops/s
+# Warmup Iteration   3: 1,912 ops/s
+Iteration   1: 1,899 ops/s
+Iteration   2: 1,900 ops/s
+Iteration   3: 1,854 ops/s
+Iteration   4: 2,199 ops/s
+Iteration   5: 2,176 ops/s
+Iteration   6: 2,274 ops/s
+Iteration   7: 2,220 ops/s
+Iteration   8: 1,991 ops/s
+Iteration   9: 2,035 ops/s
+Iteration  10: 1,966 ops/s
+
+
+Result "mipt.bit.MyBenchmark.testCounterSemaphore":
+  1,980 ±(99.9%) 0,131 ops/s [Average]
+  (min, avg, max) = (1,514, 1,980, 2,277), stdev = 0,196
+  CI (99.9%): [1,849, 2,110] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 11.0.1, Java HotSpot(TM) 64-Bit Server VM, 11.0.1+13-LTS
+# VM invoker: C:\Program Files\Java\jdk-11.0.1\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.2\lib\idea_rt.jar=59429:C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.2\bin -Dfile.encoding=UTF-8
+# Warmup: 3 iterations, 10 s each
+# Measurement: 10 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: mipt.bit.MyBenchmark.testCounterSynchronized
+
+# Run progress: 27,78% complete, ETA 01:28:42
+# Fork: 1 of 3
+# Warmup Iteration   1: 2,389 ops/s
+# Warmup Iteration   2: 2,377 ops/s
+# Warmup Iteration   3: 2,355 ops/s
+Iteration   1: 2,478 ops/s
+Iteration   2: 2,506 ops/s
+Iteration   3: 2,385 ops/s
+Iteration   4: 2,247 ops/s
+Iteration   5: 2,261 ops/s
+Iteration   6: 2,141 ops/s
+Iteration   7: 2,090 ops/s
+Iteration   8: 2,054 ops/s
+Iteration   9: 2,067 ops/s
+Iteration  10: 1,915 ops/s
+
+# Run progress: 29,63% complete, ETA 01:26:21
+# Fork: 2 of 3
+# Warmup Iteration   1: 2,291 ops/s
+# Warmup Iteration   2: 2,443 ops/s
+# Warmup Iteration   3: 2,291 ops/s
+Iteration   1: 2,215 ops/s
+Iteration   2: 2,176 ops/s
+Iteration   3: 2,296 ops/s
+Iteration   4: 2,150 ops/s
+Iteration   5: 2,162 ops/s
+Iteration   6: 2,092 ops/s
+Iteration   7: 2,115 ops/s
+Iteration   8: 2,005 ops/s
+Iteration   9: 1,889 ops/s
+Iteration  10: 1,887 ops/s
+
+# Run progress: 31,48% complete, ETA 01:24:00
+# Fork: 3 of 3
+# Warmup Iteration   1: 2,344 ops/s
+# Warmup Iteration   2: 2,457 ops/s
+# Warmup Iteration   3: 2,358 ops/s
+Iteration   1: 2,365 ops/s
+Iteration   2: 2,153 ops/s
+Iteration   3: 2,151 ops/s
+Iteration   4: 2,155 ops/s
+Iteration   5: 2,272 ops/s
+Iteration   6: 2,138 ops/s
+Iteration   7: 2,090 ops/s
+Iteration   8: 2,276 ops/s
+Iteration   9: 2,194 ops/s
+Iteration  10: 2,178 ops/s
+
+
+Result "mipt.bit.MyBenchmark.testCounterSynchronized":
+  2,170 ±(99.9%) 0,100 ops/s [Average]
+  (min, avg, max) = (1,887, 2,170, 2,506), stdev = 0,149
+  CI (99.9%): [2,070, 2,270] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 11.0.1, Java HotSpot(TM) 64-Bit Server VM, 11.0.1+13-LTS
+# VM invoker: C:\Program Files\Java\jdk-11.0.1\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.2\lib\idea_rt.jar=59429:C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.2\bin -Dfile.encoding=UTF-8
+# Warmup: 3 iterations, 10 s each
+# Measurement: 10 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: mipt.bit.MyBenchmark.testCounterAtomicLong
+
+# Run progress: 33,33% complete, ETA 01:21:40
+# Fork: 1 of 3
+# Warmup Iteration   1: 0,415 s/op
+# Warmup Iteration   2: 0,393 s/op
+# Warmup Iteration   3: 0,417 s/op
+Iteration   1: 0,419 s/op
+Iteration   2: 0,424 s/op
+Iteration   3: 0,432 s/op
+Iteration   4: 0,419 s/op
+Iteration   5: 0,443 s/op
+Iteration   6: 0,454 s/op
+Iteration   7: 0,489 s/op
+Iteration   8: 0,530 s/op
+Iteration   9: 0,488 s/op
+Iteration  10: 0,577 s/op
+
+# Run progress: 35,18% complete, ETA 01:19:21
+# Fork: 2 of 3
+# Warmup Iteration   1: 0,423 s/op
+# Warmup Iteration   2: 0,399 s/op
+# Warmup Iteration   3: 0,438 s/op
+Iteration   1: 0,420 s/op
+Iteration   2: 0,435 s/op
+Iteration   3: 0,450 s/op
+Iteration   4: 0,419 s/op
+Iteration   5: 0,421 s/op
+Iteration   6: 0,447 s/op
+Iteration   7: 0,463 s/op
+Iteration   8: 0,467 s/op
+Iteration   9: 0,511 s/op
+Iteration  10: 0,500 s/op
+
+# Run progress: 37,04% complete, ETA 01:17:02
+# Fork: 3 of 3
+# Warmup Iteration   1: 0,409 s/op
+# Warmup Iteration   2: 0,398 s/op
+# Warmup Iteration   3: 0,413 s/op
+Iteration   1: 0,408 s/op
+Iteration   2: 0,401 s/op
+Iteration   3: 0,403 s/op
+Iteration   4: 0,424 s/op
+Iteration   5: 0,439 s/op
+Iteration   6: 0,432 s/op
+Iteration   7: 0,439 s/op
+Iteration   8: 0,466 s/op
+Iteration   9: 0,457 s/op
+Iteration  10: 0,481 s/op
+
+
+Result "mipt.bit.MyBenchmark.testCounterAtomicLong":
+  0,452 ±(99.9%) 0,027 s/op [Average]
+  (min, avg, max) = (0,401, 0,452, 0,577), stdev = 0,040
+  CI (99.9%): [0,425, 0,479] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 11.0.1, Java HotSpot(TM) 64-Bit Server VM, 11.0.1+13-LTS
+# VM invoker: C:\Program Files\Java\jdk-11.0.1\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.2\lib\idea_rt.jar=59429:C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.2\bin -Dfile.encoding=UTF-8
+# Warmup: 3 iterations, 10 s each
+# Measurement: 10 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: mipt.bit.MyBenchmark.testCounterBakery
+
+# Run progress: 38,89% complete, ETA 01:14:44
+# Fork: 1 of 3
+# Warmup Iteration   1: 1,857 s/op
+# Warmup Iteration   2: 1,436 s/op
+# Warmup Iteration   3: 1,593 s/op
+Iteration   1: 1,651 s/op
+Iteration   2: 1,702 s/op
+Iteration   3: 1,710 s/op
+Iteration   4: 1,748 s/op
+Iteration   5: 1,598 s/op
+Iteration   6: 1,560 s/op
+Iteration   7: 1,613 s/op
+Iteration   8: 1,617 s/op
+Iteration   9: 1,627 s/op
+Iteration  10: 1,539 s/op
+
+# Run progress: 40,74% complete, ETA 01:12:39
+# Fork: 2 of 3
+# Warmup Iteration   1: 1,707 s/op
+# Warmup Iteration   2: 1,690 s/op
+# Warmup Iteration   3: 1,571 s/op
+Iteration   1: 1,699 s/op
+Iteration   2: 1,599 s/op
+Iteration   3: 1,568 s/op
+Iteration   4: 1,618 s/op
+Iteration   5: 1,690 s/op
+Iteration   6: 1,557 s/op
+Iteration   7: 1,523 s/op
+Iteration   8: 1,630 s/op
+Iteration   9: 1,595 s/op
+Iteration  10: 1,456 s/op
+
+# Run progress: 42,59% complete, ETA 01:10:29
+# Fork: 3 of 3
+# Warmup Iteration   1: 2,154 s/op
+# Warmup Iteration   2: 1,629 s/op
+# Warmup Iteration   3: 1,818 s/op
+Iteration   1: 1,468 s/op
+Iteration   2: 1,656 s/op
+Iteration   3: 1,546 s/op
+Iteration   4: 1,536 s/op
+Iteration   5: 1,593 s/op
+Iteration   6: 1,533 s/op
+Iteration   7: 1,723 s/op
+Iteration   8: 1,571 s/op
+Iteration   9: 1,469 s/op
+Iteration  10: 1,583 s/op
+
+
+Result "mipt.bit.MyBenchmark.testCounterBakery":
+  1,599 ±(99.9%) 0,051 s/op [Average]
+  (min, avg, max) = (1,456, 1,599, 1,748), stdev = 0,076
+  CI (99.9%): [1,548, 1,650] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 11.0.1, Java HotSpot(TM) 64-Bit Server VM, 11.0.1+13-LTS
+# VM invoker: C:\Program Files\Java\jdk-11.0.1\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.2\lib\idea_rt.jar=59429:C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.2\bin -Dfile.encoding=UTF-8
+# Warmup: 3 iterations, 10 s each
+# Measurement: 10 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: mipt.bit.MyBenchmark.testCounterLock
+
+# Run progress: 44,44% complete, ETA 01:08:20
+# Fork: 1 of 3
+# Warmup Iteration   1: 0,479 s/op
+# Warmup Iteration   2: 0,464 s/op
+# Warmup Iteration   3: 0,481 s/op
+Iteration   1: 0,507 s/op
+Iteration   2: 0,515 s/op
+Iteration   3: 0,484 s/op
+Iteration   4: 0,508 s/op
+Iteration   5: 0,524 s/op
+Iteration   6: 0,506 s/op
+Iteration   7: 0,529 s/op
+Iteration   8: 0,509 s/op
+Iteration   9: 0,523 s/op
+Iteration  10: 0,527 s/op
+
+# Run progress: 46,29% complete, ETA 01:06:01
+# Fork: 2 of 3
+# Warmup Iteration   1: 0,486 s/op
+# Warmup Iteration   2: 0,443 s/op
+# Warmup Iteration   3: 0,494 s/op
+Iteration   1: 0,504 s/op
+Iteration   2: 0,504 s/op
+Iteration   3: 0,485 s/op
+Iteration   4: 0,507 s/op
+Iteration   5: 0,510 s/op
+Iteration   6: 0,524 s/op
+Iteration   7: 0,534 s/op
+Iteration   8: 0,535 s/op
+Iteration   9: 0,531 s/op
+Iteration  10: 0,556 s/op
+
+# Run progress: 48,15% complete, ETA 01:03:42
+# Fork: 3 of 3
+# Warmup Iteration   1: 0,474 s/op
+# Warmup Iteration   2: 0,452 s/op
+# Warmup Iteration   3: 0,503 s/op
+Iteration   1: 0,490 s/op
+Iteration   2: 0,510 s/op
+Iteration   3: 0,479 s/op
+Iteration   4: 0,502 s/op
+Iteration   5: 0,541 s/op
+Iteration   6: 0,519 s/op
+Iteration   7: 0,557 s/op
+Iteration   8: 0,572 s/op
+Iteration   9: 0,557 s/op
+Iteration  10: 0,606 s/op
+
+
+Result "mipt.bit.MyBenchmark.testCounterLock":
+  0,522 ±(99.9%) 0,018 s/op [Average]
+  (min, avg, max) = (0,479, 0,522, 0,606), stdev = 0,028
+  CI (99.9%): [0,503, 0,540] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 11.0.1, Java HotSpot(TM) 64-Bit Server VM, 11.0.1+13-LTS
+# VM invoker: C:\Program Files\Java\jdk-11.0.1\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.2\lib\idea_rt.jar=59429:C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.2\bin -Dfile.encoding=UTF-8
+# Warmup: 3 iterations, 10 s each
+# Measurement: 10 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: mipt.bit.MyBenchmark.testCounterQueue
+
+# Run progress: 50,00% complete, ETA 01:01:24
+# Fork: 1 of 3
+# Warmup Iteration   1: 0,540 s/op
+# Warmup Iteration   2: 0,487 s/op
+# Warmup Iteration   3: 0,529 s/op
+Iteration   1: 0,542 s/op
+Iteration   2: 0,529 s/op
+Iteration   3: 0,538 s/op
+Iteration   4: 0,558 s/op
+Iteration   5: 0,578 s/op
+Iteration   6: 0,560 s/op
+Iteration   7: 0,578 s/op
+Iteration   8: 0,566 s/op
+Iteration   9: 0,593 s/op
+Iteration  10: 0,576 s/op
+
+# Run progress: 51,85% complete, ETA 00:59:06
+# Fork: 2 of 3
+# Warmup Iteration   1: 0,546 s/op
+# Warmup Iteration   2: 0,489 s/op
+# Warmup Iteration   3: 0,531 s/op
+Iteration   1: 0,550 s/op
+Iteration   2: 0,531 s/op
+Iteration   3: 0,528 s/op
+Iteration   4: 0,565 s/op
+Iteration   5: 0,539 s/op
+Iteration   6: 0,559 s/op
+Iteration   7: 0,590 s/op
+Iteration   8: 0,595 s/op
+Iteration   9: 0,616 s/op
+Iteration  10: 0,590 s/op
+
+# Run progress: 53,70% complete, ETA 00:56:49
+# Fork: 3 of 3
+# Warmup Iteration   1: 0,542 s/op
+# Warmup Iteration   2: 0,497 s/op
+# Warmup Iteration   3: 0,523 s/op
+Iteration   1: 0,532 s/op
+Iteration   2: 0,550 s/op
+Iteration   3: 0,538 s/op
+Iteration   4: 0,561 s/op
+Iteration   5: 0,545 s/op
+Iteration   6: 0,594 s/op
+Iteration   7: 0,551 s/op
+Iteration   8: 0,606 s/op
+Iteration   9: 0,588 s/op
+Iteration  10: 0,601 s/op
+
+
+Result "mipt.bit.MyBenchmark.testCounterQueue":
+  0,565 ±(99.9%) 0,017 s/op [Average]
+  (min, avg, max) = (0,528, 0,565, 0,616), stdev = 0,026
+  CI (99.9%): [0,548, 0,582] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 11.0.1, Java HotSpot(TM) 64-Bit Server VM, 11.0.1+13-LTS
+# VM invoker: C:\Program Files\Java\jdk-11.0.1\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.2\lib\idea_rt.jar=59429:C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.2\bin -Dfile.encoding=UTF-8
+# Warmup: 3 iterations, 10 s each
+# Measurement: 10 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: mipt.bit.MyBenchmark.testCounterSemaphore
+
+# Run progress: 55,55% complete, ETA 00:54:31
+# Fork: 1 of 3
+# Warmup Iteration   1: 0,469 s/op
+# Warmup Iteration   2: 0,479 s/op
+# Warmup Iteration   3: 0,532 s/op
+Iteration   1: 0,519 s/op
+Iteration   2: 0,524 s/op
+Iteration   3: 0,509 s/op
+Iteration   4: 0,527 s/op
+Iteration   5: 0,530 s/op
+Iteration   6: 0,566 s/op
+Iteration   7: 0,564 s/op
+Iteration   8: 0,596 s/op
+Iteration   9: 0,590 s/op
+Iteration  10: 0,606 s/op
+
+# Run progress: 57,41% complete, ETA 00:52:14
+# Fork: 2 of 3
+# Warmup Iteration   1: 0,508 s/op
+# Warmup Iteration   2: 0,472 s/op
+# Warmup Iteration   3: 0,524 s/op
+Iteration   1: 0,521 s/op
+Iteration   2: 0,517 s/op
+Iteration   3: 0,533 s/op
+Iteration   4: 0,540 s/op
+Iteration   5: 0,528 s/op
+Iteration   6: 0,530 s/op
+Iteration   7: 0,561 s/op
+Iteration   8: 0,541 s/op
+Iteration   9: 0,560 s/op
+Iteration  10: 0,602 s/op
+
+# Run progress: 59,26% complete, ETA 00:49:58
+# Fork: 3 of 3
+# Warmup Iteration   1: 0,496 s/op
+# Warmup Iteration   2: 0,454 s/op
+# Warmup Iteration   3: 0,454 s/op
+Iteration   1: 0,461 s/op
+Iteration   2: 0,462 s/op
+Iteration   3: 0,509 s/op
+Iteration   4: 0,471 s/op
+Iteration   5: 0,442 s/op
+Iteration   6: 0,456 s/op
+Iteration   7: 0,453 s/op
+Iteration   8: 0,451 s/op
+Iteration   9: 0,499 s/op
+Iteration  10: 0,494 s/op
+
+
+Result "mipt.bit.MyBenchmark.testCounterSemaphore":
+  0,522 ±(99.9%) 0,031 s/op [Average]
+  (min, avg, max) = (0,442, 0,522, 0,606), stdev = 0,047
+  CI (99.9%): [0,491, 0,553] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 11.0.1, Java HotSpot(TM) 64-Bit Server VM, 11.0.1+13-LTS
+# VM invoker: C:\Program Files\Java\jdk-11.0.1\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.2\lib\idea_rt.jar=59429:C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.2\bin -Dfile.encoding=UTF-8
+# Warmup: 3 iterations, 10 s each
+# Measurement: 10 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: mipt.bit.MyBenchmark.testCounterSynchronized
+
+# Run progress: 61,11% complete, ETA 00:47:41
+# Fork: 1 of 3
+# Warmup Iteration   1: 0,403 s/op
+# Warmup Iteration   2: 0,411 s/op
+# Warmup Iteration   3: 0,428 s/op
+Iteration   1: 0,445 s/op
+Iteration   2: 0,460 s/op
+Iteration   3: 0,472 s/op
+Iteration   4: 0,422 s/op
+Iteration   5: 0,428 s/op
+Iteration   6: 0,435 s/op
+Iteration   7: 0,483 s/op
+Iteration   8: 0,478 s/op
+Iteration   9: 0,505 s/op
+Iteration  10: 0,492 s/op
+
+# Run progress: 62,96% complete, ETA 00:45:24
+# Fork: 2 of 3
+# Warmup Iteration   1: 0,423 s/op
+# Warmup Iteration   2: 0,422 s/op
+# Warmup Iteration   3: 0,437 s/op
+Iteration   1: 0,425 s/op
+Iteration   2: 0,442 s/op
+Iteration   3: 0,419 s/op
+Iteration   4: 0,401 s/op
+Iteration   5: 0,402 s/op
+Iteration   6: 0,428 s/op
+Iteration   7: 0,479 s/op
+Iteration   8: 0,477 s/op
+Iteration   9: 0,479 s/op
+Iteration  10: 0,463 s/op
+
+# Run progress: 64,81% complete, ETA 00:43:07
+# Fork: 3 of 3
+# Warmup Iteration   1: 0,426 s/op
+# Warmup Iteration   2: 0,395 s/op
+# Warmup Iteration   3: 0,414 s/op
+Iteration   1: 0,427 s/op
+Iteration   2: 0,438 s/op
+Iteration   3: 0,425 s/op
+Iteration   4: 0,417 s/op
+Iteration   5: 0,411 s/op
+Iteration   6: 0,403 s/op
+Iteration   7: 0,411 s/op
+Iteration   8: 0,442 s/op
+Iteration   9: 0,479 s/op
+Iteration  10: 0,462 s/op
+
+
+Result "mipt.bit.MyBenchmark.testCounterSynchronized":
+  0,445 ±(99.9%) 0,020 s/op [Average]
+  (min, avg, max) = (0,401, 0,445, 0,505), stdev = 0,030
+  CI (99.9%): [0,425, 0,465] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 11.0.1, Java HotSpot(TM) 64-Bit Server VM, 11.0.1+13-LTS
+# VM invoker: C:\Program Files\Java\jdk-11.0.1\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.2\lib\idea_rt.jar=59429:C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.2\bin -Dfile.encoding=UTF-8
+# Warmup: 3 iterations, 10 s each
+# Measurement: 10 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: mipt.bit.MyBenchmark.testCounterAtomicLong
+
+# Run progress: 66,66% complete, ETA 00:40:50
+# Fork: 1 of 3
+# Warmup Iteration   1: 0,402 ±(99.9%) 0,066 s/op
+# Warmup Iteration   2: 0,400 ±(99.9%) 0,077 s/op
+# Warmup Iteration   3: 0,408 ±(99.9%) 0,077 s/op
+Iteration   1: 0,420 ±(99.9%) 0,093 s/op
+                 testCounterAtomicLong·p0.00:   0,251 s/op
+                 testCounterAtomicLong·p0.50:   0,449 s/op
+                 testCounterAtomicLong·p0.90:   0,521 s/op
+                 testCounterAtomicLong·p0.95:   0,719 s/op
+                 testCounterAtomicLong·p0.99:   0,782 s/op
+                 testCounterAtomicLong·p0.999:  0,782 s/op
+                 testCounterAtomicLong·p0.9999: 0,782 s/op
+                 testCounterAtomicLong·p1.00:   0,782 s/op
+
+Iteration   2: 0,421 ±(99.9%) 0,080 s/op
+                 testCounterAtomicLong·p0.00:   0,263 s/op
+                 testCounterAtomicLong·p0.50:   0,458 s/op
+                 testCounterAtomicLong·p0.90:   0,539 s/op
+                 testCounterAtomicLong·p0.95:   0,558 s/op
+                 testCounterAtomicLong·p0.99:   0,562 s/op
+                 testCounterAtomicLong·p0.999:  0,562 s/op
+                 testCounterAtomicLong·p0.9999: 0,562 s/op
+                 testCounterAtomicLong·p1.00:   0,562 s/op
+
+Iteration   3: 0,422 ±(99.9%) 0,079 s/op
+                 testCounterAtomicLong·p0.00:   0,265 s/op
+                 testCounterAtomicLong·p0.50:   0,454 s/op
+                 testCounterAtomicLong·p0.90:   0,510 s/op
+                 testCounterAtomicLong·p0.95:   0,635 s/op
+                 testCounterAtomicLong·p0.99:   0,673 s/op
+                 testCounterAtomicLong·p0.999:  0,673 s/op
+                 testCounterAtomicLong·p0.9999: 0,673 s/op
+                 testCounterAtomicLong·p1.00:   0,673 s/op
+
+Iteration   4: 0,407 ±(99.9%) 0,079 s/op
+                 testCounterAtomicLong·p0.00:   0,243 s/op
+                 testCounterAtomicLong·p0.50:   0,447 s/op
+                 testCounterAtomicLong·p0.90:   0,507 s/op
+                 testCounterAtomicLong·p0.95:   0,552 s/op
+                 testCounterAtomicLong·p0.99:   0,565 s/op
+                 testCounterAtomicLong·p0.999:  0,565 s/op
+                 testCounterAtomicLong·p0.9999: 0,565 s/op
+                 testCounterAtomicLong·p1.00:   0,565 s/op
+
+Iteration   5: 0,448 ±(99.9%) 0,081 s/op
+                 testCounterAtomicLong·p0.00:   0,269 s/op
+                 testCounterAtomicLong·p0.50:   0,473 s/op
+                 testCounterAtomicLong·p0.90:   0,557 s/op
+                 testCounterAtomicLong·p0.95:   0,564 s/op
+                 testCounterAtomicLong·p0.99:   0,564 s/op
+                 testCounterAtomicLong·p0.999:  0,564 s/op
+                 testCounterAtomicLong·p0.9999: 0,564 s/op
+                 testCounterAtomicLong·p1.00:   0,564 s/op
+
+Iteration   6: 0,441 ±(99.9%) 0,089 s/op
+                 testCounterAtomicLong·p0.00:   0,274 s/op
+                 testCounterAtomicLong·p0.50:   0,474 s/op
+                 testCounterAtomicLong·p0.90:   0,592 s/op
+                 testCounterAtomicLong·p0.95:   0,612 s/op
+                 testCounterAtomicLong·p0.99:   0,613 s/op
+                 testCounterAtomicLong·p0.999:  0,613 s/op
+                 testCounterAtomicLong·p0.9999: 0,613 s/op
+                 testCounterAtomicLong·p1.00:   0,613 s/op
+
+Iteration   7: 0,441 ±(99.9%) 0,087 s/op
+                 testCounterAtomicLong·p0.00:   0,270 s/op
+                 testCounterAtomicLong·p0.50:   0,482 s/op
+                 testCounterAtomicLong·p0.90:   0,538 s/op
+                 testCounterAtomicLong·p0.95:   0,610 s/op
+                 testCounterAtomicLong·p0.99:   0,626 s/op
+                 testCounterAtomicLong·p0.999:  0,626 s/op
+                 testCounterAtomicLong·p0.9999: 0,626 s/op
+                 testCounterAtomicLong·p1.00:   0,626 s/op
+
+Iteration   8: 0,445 ±(99.9%) 0,088 s/op
+                 testCounterAtomicLong·p0.00:   0,273 s/op
+                 testCounterAtomicLong·p0.50:   0,497 s/op
+                 testCounterAtomicLong·p0.90:   0,550 s/op
+                 testCounterAtomicLong·p0.95:   0,620 s/op
+                 testCounterAtomicLong·p0.99:   0,636 s/op
+                 testCounterAtomicLong·p0.999:  0,636 s/op
+                 testCounterAtomicLong·p0.9999: 0,636 s/op
+                 testCounterAtomicLong·p1.00:   0,636 s/op
+
+Iteration   9: 0,495 ±(99.9%) 0,115 s/op
+                 testCounterAtomicLong·p0.00:   0,274 s/op
+                 testCounterAtomicLong·p0.50:   0,514 s/op
+                 testCounterAtomicLong·p0.90:   0,604 s/op
+                 testCounterAtomicLong·p0.95:   0,840 s/op
+                 testCounterAtomicLong·p0.99:   0,866 s/op
+                 testCounterAtomicLong·p0.999:  0,866 s/op
+                 testCounterAtomicLong·p0.9999: 0,866 s/op
+                 testCounterAtomicLong·p1.00:   0,866 s/op
+
+Iteration  10: 0,431 ±(99.9%) 0,074 s/op
+                 testCounterAtomicLong·p0.00:   0,286 s/op
+                 testCounterAtomicLong·p0.50:   0,452 s/op
+                 testCounterAtomicLong·p0.90:   0,546 s/op
+                 testCounterAtomicLong·p0.95:   0,583 s/op
+                 testCounterAtomicLong·p0.99:   0,591 s/op
+                 testCounterAtomicLong·p0.999:  0,591 s/op
+                 testCounterAtomicLong·p0.9999: 0,591 s/op
+                 testCounterAtomicLong·p1.00:   0,591 s/op
+
+
+# Run progress: 68,52% complete, ETA 00:38:34
+# Fork: 2 of 3
+# Warmup Iteration   1: 0,411 ±(99.9%) 0,073 s/op
+# Warmup Iteration   2: 0,396 ±(99.9%) 0,070 s/op
+# Warmup Iteration   3: 0,410 ±(99.9%) 0,063 s/op
+Iteration   1: 0,424 ±(99.9%) 0,080 s/op
+                 testCounterAtomicLong·p0.00:   0,269 s/op
+                 testCounterAtomicLong·p0.50:   0,462 s/op
+                 testCounterAtomicLong·p0.90:   0,500 s/op
+                 testCounterAtomicLong·p0.95:   0,622 s/op
+                 testCounterAtomicLong·p0.99:   0,661 s/op
+                 testCounterAtomicLong·p0.999:  0,661 s/op
+                 testCounterAtomicLong·p0.9999: 0,661 s/op
+                 testCounterAtomicLong·p1.00:   0,661 s/op
+
+Iteration   2: 0,433 ±(99.9%) 0,075 s/op
+                 testCounterAtomicLong·p0.00:   0,261 s/op
+                 testCounterAtomicLong·p0.50:   0,473 s/op
+                 testCounterAtomicLong·p0.90:   0,528 s/op
+                 testCounterAtomicLong·p0.95:   0,559 s/op
+                 testCounterAtomicLong·p0.99:   0,566 s/op
+                 testCounterAtomicLong·p0.999:  0,566 s/op
+                 testCounterAtomicLong·p0.9999: 0,566 s/op
+                 testCounterAtomicLong·p1.00:   0,566 s/op
+
+Iteration   3: 0,459 ±(99.9%) 0,090 s/op
+                 testCounterAtomicLong·p0.00:   0,262 s/op
+                 testCounterAtomicLong·p0.50:   0,481 s/op
+                 testCounterAtomicLong·p0.90:   0,588 s/op
+                 testCounterAtomicLong·p0.95:   0,634 s/op
+                 testCounterAtomicLong·p0.99:   0,643 s/op
+                 testCounterAtomicLong·p0.999:  0,643 s/op
+                 testCounterAtomicLong·p0.9999: 0,643 s/op
+                 testCounterAtomicLong·p1.00:   0,643 s/op
+
+Iteration   4: 0,431 ±(99.9%) 0,076 s/op
+                 testCounterAtomicLong·p0.00:   0,279 s/op
+                 testCounterAtomicLong·p0.50:   0,475 s/op
+                 testCounterAtomicLong·p0.90:   0,541 s/op
+                 testCounterAtomicLong·p0.95:   0,558 s/op
+                 testCounterAtomicLong·p0.99:   0,561 s/op
+                 testCounterAtomicLong·p0.999:  0,561 s/op
+                 testCounterAtomicLong·p0.9999: 0,561 s/op
+                 testCounterAtomicLong·p1.00:   0,561 s/op
+
+Iteration   5: 0,471 ±(99.9%) 0,093 s/op
+                 testCounterAtomicLong·p0.00:   0,279 s/op
+                 testCounterAtomicLong·p0.50:   0,507 s/op
+                 testCounterAtomicLong·p0.90:   0,600 s/op
+                 testCounterAtomicLong·p0.95:   0,605 s/op
+                 testCounterAtomicLong·p0.99:   0,606 s/op
+                 testCounterAtomicLong·p0.999:  0,606 s/op
+                 testCounterAtomicLong·p0.9999: 0,606 s/op
+                 testCounterAtomicLong·p1.00:   0,606 s/op
+
+Iteration   6: 0,479 ±(99.9%) 0,101 s/op
+                 testCounterAtomicLong·p0.00:   0,283 s/op
+                 testCounterAtomicLong·p0.50:   0,517 s/op
+                 testCounterAtomicLong·p0.90:   0,638 s/op
+                 testCounterAtomicLong·p0.95:   0,645 s/op
+                 testCounterAtomicLong·p0.99:   0,645 s/op
+                 testCounterAtomicLong·p0.999:  0,645 s/op
+                 testCounterAtomicLong·p0.9999: 0,645 s/op
+                 testCounterAtomicLong·p1.00:   0,645 s/op
+
+Iteration   7: 0,496 ±(99.9%) 0,111 s/op
+                 testCounterAtomicLong·p0.00:   0,280 s/op
+                 testCounterAtomicLong·p0.50:   0,547 s/op
+                 testCounterAtomicLong·p0.90:   0,660 s/op
+                 testCounterAtomicLong·p0.95:   0,687 s/op
+                 testCounterAtomicLong·p0.99:   0,689 s/op
+                 testCounterAtomicLong·p0.999:  0,689 s/op
+                 testCounterAtomicLong·p0.9999: 0,689 s/op
+                 testCounterAtomicLong·p1.00:   0,689 s/op
+
+Iteration   8: 0,530 ±(99.9%) 0,110 s/op
+                 testCounterAtomicLong·p0.00:   0,274 s/op
+                 testCounterAtomicLong·p0.50:   0,569 s/op
+                 testCounterAtomicLong·p0.90:   0,668 s/op
+                 testCounterAtomicLong·p0.95:   0,690 s/op
+                 testCounterAtomicLong·p0.99:   0,691 s/op
+                 testCounterAtomicLong·p0.999:  0,691 s/op
+                 testCounterAtomicLong·p0.9999: 0,691 s/op
+                 testCounterAtomicLong·p1.00:   0,691 s/op
+
+Iteration   9: 0,546 ±(99.9%) 0,139 s/op
+                 testCounterAtomicLong·p0.00:   0,297 s/op
+                 testCounterAtomicLong·p0.50:   0,588 s/op
+                 testCounterAtomicLong·p0.90:   0,724 s/op
+                 testCounterAtomicLong·p0.95:   0,859 s/op
+                 testCounterAtomicLong·p0.99:   0,859 s/op
+                 testCounterAtomicLong·p0.999:  0,859 s/op
+                 testCounterAtomicLong·p0.9999: 0,859 s/op
+                 testCounterAtomicLong·p1.00:   0,859 s/op
+
+Iteration  10: 0,566 ±(99.9%) 0,114 s/op
+                 testCounterAtomicLong·p0.00:   0,324 s/op
+                 testCounterAtomicLong·p0.50:   0,606 s/op
+                 testCounterAtomicLong·p0.90:   0,677 s/op
+                 testCounterAtomicLong·p0.95:   0,716 s/op
+                 testCounterAtomicLong·p0.99:   0,716 s/op
+                 testCounterAtomicLong·p0.999:  0,716 s/op
+                 testCounterAtomicLong·p0.9999: 0,716 s/op
+                 testCounterAtomicLong·p1.00:   0,716 s/op
+
+
+# Run progress: 70,37% complete, ETA 00:36:17
+# Fork: 3 of 3
+# Warmup Iteration   1: 0,403 ±(99.9%) 0,059 s/op
+# Warmup Iteration   2: 0,391 ±(99.9%) 0,069 s/op
+# Warmup Iteration   3: 0,411 ±(99.9%) 0,072 s/op
+Iteration   1: 0,417 ±(99.9%) 0,067 s/op
+                 testCounterAtomicLong·p0.00:   0,264 s/op
+                 testCounterAtomicLong·p0.50:   0,456 s/op
+                 testCounterAtomicLong·p0.90:   0,506 s/op
+                 testCounterAtomicLong·p0.95:   0,523 s/op
+                 testCounterAtomicLong·p0.99:   0,525 s/op
+                 testCounterAtomicLong·p0.999:  0,525 s/op
+                 testCounterAtomicLong·p0.9999: 0,525 s/op
+                 testCounterAtomicLong·p1.00:   0,525 s/op
+
+Iteration   2: 0,419 ±(99.9%) 0,075 s/op
+                 testCounterAtomicLong·p0.00:   0,264 s/op
+                 testCounterAtomicLong·p0.50:   0,467 s/op
+                 testCounterAtomicLong·p0.90:   0,512 s/op
+                 testCounterAtomicLong·p0.95:   0,517 s/op
+                 testCounterAtomicLong·p0.99:   0,517 s/op
+                 testCounterAtomicLong·p0.999:  0,517 s/op
+                 testCounterAtomicLong·p0.9999: 0,517 s/op
+                 testCounterAtomicLong·p1.00:   0,517 s/op
+
+Iteration   3: 0,419 ±(99.9%) 0,078 s/op
+                 testCounterAtomicLong·p0.00:   0,261 s/op
+                 testCounterAtomicLong·p0.50:   0,458 s/op
+                 testCounterAtomicLong·p0.90:   0,517 s/op
+                 testCounterAtomicLong·p0.95:   0,576 s/op
+                 testCounterAtomicLong·p0.99:   0,595 s/op
+                 testCounterAtomicLong·p0.999:  0,595 s/op
+                 testCounterAtomicLong·p0.9999: 0,595 s/op
+                 testCounterAtomicLong·p1.00:   0,595 s/op
+
+Iteration   4: 0,409 ±(99.9%) 0,081 s/op
+                 testCounterAtomicLong·p0.00:   0,242 s/op
+                 testCounterAtomicLong·p0.50:   0,451 s/op
+                 testCounterAtomicLong·p0.90:   0,515 s/op
+                 testCounterAtomicLong·p0.95:   0,563 s/op
+                 testCounterAtomicLong·p0.99:   0,582 s/op
+                 testCounterAtomicLong·p0.999:  0,582 s/op
+                 testCounterAtomicLong·p0.9999: 0,582 s/op
+                 testCounterAtomicLong·p1.00:   0,582 s/op
+
+Iteration   5: 0,420 ±(99.9%) 0,072 s/op
+                 testCounterAtomicLong·p0.00:   0,259 s/op
+                 testCounterAtomicLong·p0.50:   0,453 s/op
+                 testCounterAtomicLong·p0.90:   0,517 s/op
+                 testCounterAtomicLong·p0.95:   0,530 s/op
+                 testCounterAtomicLong·p0.99:   0,532 s/op
+                 testCounterAtomicLong·p0.999:  0,532 s/op
+                 testCounterAtomicLong·p0.9999: 0,532 s/op
+                 testCounterAtomicLong·p1.00:   0,532 s/op
+
+Iteration   6: 0,418 ±(99.9%) 0,086 s/op
+                 testCounterAtomicLong·p0.00:   0,238 s/op
+                 testCounterAtomicLong·p0.50:   0,455 s/op
+                 testCounterAtomicLong·p0.90:   0,514 s/op
+                 testCounterAtomicLong·p0.95:   0,642 s/op
+                 testCounterAtomicLong·p0.99:   0,682 s/op
+                 testCounterAtomicLong·p0.999:  0,682 s/op
+                 testCounterAtomicLong·p0.9999: 0,682 s/op
+                 testCounterAtomicLong·p1.00:   0,682 s/op
+
+Iteration   7: 0,429 ±(99.9%) 0,074 s/op
+                 testCounterAtomicLong·p0.00:   0,277 s/op
+                 testCounterAtomicLong·p0.50:   0,464 s/op
+                 testCounterAtomicLong·p0.90:   0,537 s/op
+                 testCounterAtomicLong·p0.95:   0,553 s/op
+                 testCounterAtomicLong·p0.99:   0,557 s/op
+                 testCounterAtomicLong·p0.999:  0,557 s/op
+                 testCounterAtomicLong·p0.9999: 0,557 s/op
+                 testCounterAtomicLong·p1.00:   0,557 s/op
+
+Iteration   8: 0,465 ±(99.9%) 0,083 s/op
+                 testCounterAtomicLong·p0.00:   0,284 s/op
+                 testCounterAtomicLong·p0.50:   0,506 s/op
+                 testCounterAtomicLong·p0.90:   0,576 s/op
+                 testCounterAtomicLong·p0.95:   0,588 s/op
+                 testCounterAtomicLong·p0.99:   0,589 s/op
+                 testCounterAtomicLong·p0.999:  0,589 s/op
+                 testCounterAtomicLong·p0.9999: 0,589 s/op
+                 testCounterAtomicLong·p1.00:   0,589 s/op
+
+Iteration   9: 0,457 ±(99.9%) 0,090 s/op
+                 testCounterAtomicLong·p0.00:   0,263 s/op
+                 testCounterAtomicLong·p0.50:   0,502 s/op
+                 testCounterAtomicLong·p0.90:   0,572 s/op
+                 testCounterAtomicLong·p0.95:   0,584 s/op
+                 testCounterAtomicLong·p0.99:   0,586 s/op
+                 testCounterAtomicLong·p0.999:  0,586 s/op
+                 testCounterAtomicLong·p0.9999: 0,586 s/op
+                 testCounterAtomicLong·p1.00:   0,586 s/op
+
+Iteration  10: 0,477 ±(99.9%) 0,098 s/op
+                 testCounterAtomicLong·p0.00:   0,286 s/op
+                 testCounterAtomicLong·p0.50:   0,514 s/op
+                 testCounterAtomicLong·p0.90:   0,634 s/op
+                 testCounterAtomicLong·p0.95:   0,682 s/op
+                 testCounterAtomicLong·p0.99:   0,688 s/op
+                 testCounterAtomicLong·p0.999:  0,688 s/op
+                 testCounterAtomicLong·p0.9999: 0,688 s/op
+                 testCounterAtomicLong·p1.00:   0,688 s/op
+
+
+
+Result "mipt.bit.MyBenchmark.testCounterAtomicLong":
+  N = 685
+  mean =      0,448 ±(99.9%) 0,014 s/op
+
+  Histogram, s/op:
+    [0,200, 0,250) = 4
+    [0,250, 0,300) = 127
+    [0,300, 0,350) = 56
+    [0,350, 0,400) = 13
+    [0,400, 0,450) = 67
+    [0,450, 0,500) = 185
+    [0,500, 0,550) = 129
+    [0,550, 0,600) = 56
+    [0,600, 0,650) = 29
+    [0,650, 0,700) = 13
+    [0,700, 0,750) = 3
+    [0,750, 0,800) = 1
+    [0,800, 0,850) = 0
+
+  Percentiles, s/op:
+      p(0,0000) =      0,238 s/op
+     p(50,0000) =      0,472 s/op
+     p(90,0000) =      0,579 s/op
+     p(95,0000) =      0,623 s/op
+     p(99,0000) =      0,693 s/op
+     p(99,9000) =      0,866 s/op
+     p(99,9900) =      0,866 s/op
+     p(99,9990) =      0,866 s/op
+     p(99,9999) =      0,866 s/op
+    p(100,0000) =      0,866 s/op
+
+
+# JMH version: 1.21
+# VM version: JDK 11.0.1, Java HotSpot(TM) 64-Bit Server VM, 11.0.1+13-LTS
+# VM invoker: C:\Program Files\Java\jdk-11.0.1\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.2\lib\idea_rt.jar=59429:C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.2\bin -Dfile.encoding=UTF-8
+# Warmup: 3 iterations, 10 s each
+# Measurement: 10 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: mipt.bit.MyBenchmark.testCounterBakery
+
+# Run progress: 72,22% complete, ETA 00:34:01
+# Fork: 1 of 3
+# Warmup Iteration   1: 1,757 ±(99.9%) 0,547 s/op
+# Warmup Iteration   2: 1,714 ±(99.9%) 0,263 s/op
+# Warmup Iteration   3: 1,727 ±(99.9%) 0,248 s/op
+Iteration   1: 1,749 ±(99.9%) 0,567 s/op
+                 testCounterBakery·p0.00:   1,380 s/op
+                 testCounterBakery·p0.50:   1,775 s/op
+                 testCounterBakery·p0.90:   1,931 s/op
+                 testCounterBakery·p0.95:   1,931 s/op
+                 testCounterBakery·p0.99:   1,931 s/op
+                 testCounterBakery·p0.999:  1,931 s/op
+                 testCounterBakery·p0.9999: 1,931 s/op
+                 testCounterBakery·p1.00:   1,931 s/op
+
+Iteration   2: 1,682 ±(99.9%) 0,554 s/op
+                 testCounterBakery·p0.00:   1,401 s/op
+                 testCounterBakery·p0.50:   1,577 s/op
+                 testCounterBakery·p0.90:   1,992 s/op
+                 testCounterBakery·p0.95:   1,992 s/op
+                 testCounterBakery·p0.99:   1,992 s/op
+                 testCounterBakery·p0.999:  1,992 s/op
+                 testCounterBakery·p0.9999: 1,992 s/op
+                 testCounterBakery·p1.00:   1,992 s/op
+
+Iteration   3: 1,763 ±(99.9%) 0,655 s/op
+                 testCounterBakery·p0.00:   1,512 s/op
+                 testCounterBakery·p0.50:   1,679 s/op
+                 testCounterBakery·p0.90:   2,127 s/op
+                 testCounterBakery·p0.95:   2,127 s/op
+                 testCounterBakery·p0.99:   2,127 s/op
+                 testCounterBakery·p0.999:  2,127 s/op
+                 testCounterBakery·p0.9999: 2,127 s/op
+                 testCounterBakery·p1.00:   2,127 s/op
+
+Iteration   4: 1,863 ±(99.9%) 0,754 s/op
+                 testCounterBakery·p0.00:   1,548 s/op
+                 testCounterBakery·p0.50:   1,898 s/op
+                 testCounterBakery·p0.90:   2,223 s/op
+                 testCounterBakery·p0.95:   2,223 s/op
+                 testCounterBakery·p0.99:   2,223 s/op
+                 testCounterBakery·p0.999:  2,223 s/op
+                 testCounterBakery·p0.9999: 2,223 s/op
+                 testCounterBakery·p1.00:   2,223 s/op
+
+Iteration   5: 1,792 ±(99.9%) 0,556 s/op
+                 testCounterBakery·p0.00:   1,537 s/op
+                 testCounterBakery·p0.50:   1,877 s/op
+                 testCounterBakery·p0.90:   1,969 s/op
+                 testCounterBakery·p0.95:   1,969 s/op
+                 testCounterBakery·p0.99:   1,969 s/op
+                 testCounterBakery·p0.999:  1,969 s/op
+                 testCounterBakery·p0.9999: 1,969 s/op
+                 testCounterBakery·p1.00:   1,969 s/op
+
+Iteration   6: 1,591 ±(99.9%) 0,508 s/op
+                 testCounterBakery·p0.00:   1,275 s/op
+                 testCounterBakery·p0.50:   1,600 s/op
+                 testCounterBakery·p0.90:   1,980 s/op
+                 testCounterBakery·p0.95:   1,980 s/op
+                 testCounterBakery·p0.99:   1,980 s/op
+                 testCounterBakery·p0.999:  1,980 s/op
+                 testCounterBakery·p0.9999: 1,980 s/op
+                 testCounterBakery·p1.00:   1,980 s/op
+
+Iteration   7: 1,724 ±(99.9%) 0,818 s/op
+                 testCounterBakery·p0.00:   1,405 s/op
+                 testCounterBakery·p0.50:   1,729 s/op
+                 testCounterBakery·p0.90:   2,066 s/op
+                 testCounterBakery·p0.95:   2,066 s/op
+                 testCounterBakery·p0.99:   2,066 s/op
+                 testCounterBakery·p0.999:  2,066 s/op
+                 testCounterBakery·p0.9999: 2,066 s/op
+                 testCounterBakery·p1.00:   2,066 s/op
+
+Iteration   8: 1,638 ±(99.9%) 0,345 s/op
+                 testCounterBakery·p0.00:   1,390 s/op
+                 testCounterBakery·p0.50:   1,661 s/op
+                 testCounterBakery·p0.90:   1,845 s/op
+                 testCounterBakery·p0.95:   1,845 s/op
+                 testCounterBakery·p0.99:   1,845 s/op
+                 testCounterBakery·p0.999:  1,845 s/op
+                 testCounterBakery·p0.9999: 1,845 s/op
+                 testCounterBakery·p1.00:   1,845 s/op
+
+Iteration   9: 1,547 ±(99.9%) 0,429 s/op
+                 testCounterBakery·p0.00:   1,332 s/op
+                 testCounterBakery·p0.50:   1,487 s/op
+                 testCounterBakery·p0.90:   1,778 s/op
+                 testCounterBakery·p0.95:   1,778 s/op
+                 testCounterBakery·p0.99:   1,778 s/op
+                 testCounterBakery·p0.999:  1,778 s/op
+                 testCounterBakery·p0.9999: 1,778 s/op
+                 testCounterBakery·p1.00:   1,778 s/op
+
+Iteration  10: 1,613 ±(99.9%) 0,327 s/op
+                 testCounterBakery·p0.00:   1,330 s/op
+                 testCounterBakery·p0.50:   1,627 s/op
+                 testCounterBakery·p0.90:   1,812 s/op
+                 testCounterBakery·p0.95:   1,812 s/op
+                 testCounterBakery·p0.99:   1,812 s/op
+                 testCounterBakery·p0.999:  1,812 s/op
+                 testCounterBakery·p0.9999: 1,812 s/op
+                 testCounterBakery·p1.00:   1,812 s/op
+
+
+# Run progress: 74,07% complete, ETA 00:31:47
+# Fork: 2 of 3
+# Warmup Iteration   1: 1,871 ±(99.9%) 0,432 s/op
+# Warmup Iteration   2: 1,737 ±(99.9%) 0,514 s/op
+# Warmup Iteration   3: 1,725 ±(99.9%) 0,583 s/op
+Iteration   1: 1,443 ±(99.9%) 0,345 s/op
+                 testCounterBakery·p0.00:   1,298 s/op
+                 testCounterBakery·p0.50:   1,403 s/op
+                 testCounterBakery·p0.90:   1,661 s/op
+                 testCounterBakery·p0.95:   1,661 s/op
+                 testCounterBakery·p0.99:   1,661 s/op
+                 testCounterBakery·p0.999:  1,661 s/op
+                 testCounterBakery·p0.9999: 1,661 s/op
+                 testCounterBakery·p1.00:   1,661 s/op
+
+Iteration   2: 1,674 ±(99.9%) 0,883 s/op
+                 testCounterBakery·p0.00:   1,244 s/op
+                 testCounterBakery·p0.50:   1,682 s/op
+                 testCounterBakery·p0.90:   2,034 s/op
+                 testCounterBakery·p0.95:   2,034 s/op
+                 testCounterBakery·p0.99:   2,034 s/op
+                 testCounterBakery·p0.999:  2,034 s/op
+                 testCounterBakery·p0.9999: 2,034 s/op
+                 testCounterBakery·p1.00:   2,034 s/op
+
+Iteration   3: 1,461 ±(99.9%) 0,506 s/op
+                 testCounterBakery·p0.00:   1,189 s/op
+                 testCounterBakery·p0.50:   1,422 s/op
+                 testCounterBakery·p0.90:   1,797 s/op
+                 testCounterBakery·p0.95:   1,797 s/op
+                 testCounterBakery·p0.99:   1,797 s/op
+                 testCounterBakery·p0.999:  1,797 s/op
+                 testCounterBakery·p0.9999: 1,797 s/op
+                 testCounterBakery·p1.00:   1,797 s/op
+
+Iteration   4: 1,496 ±(99.9%) 0,388 s/op
+                 testCounterBakery·p0.00:   1,237 s/op
+                 testCounterBakery·p0.50:   1,535 s/op
+                 testCounterBakery·p0.90:   1,724 s/op
+                 testCounterBakery·p0.95:   1,724 s/op
+                 testCounterBakery·p0.99:   1,724 s/op
+                 testCounterBakery·p0.999:  1,724 s/op
+                 testCounterBakery·p0.9999: 1,724 s/op
+                 testCounterBakery·p1.00:   1,724 s/op
+
+Iteration   5: 1,397 ±(99.9%) 0,461 s/op
+                 testCounterBakery·p0.00:   1,172 s/op
+                 testCounterBakery·p0.50:   1,346 s/op
+                 testCounterBakery·p0.90:   1,948 s/op
+                 testCounterBakery·p0.95:   1,948 s/op
+                 testCounterBakery·p0.99:   1,948 s/op
+                 testCounterBakery·p0.999:  1,948 s/op
+                 testCounterBakery·p0.9999: 1,948 s/op
+                 testCounterBakery·p1.00:   1,948 s/op
+
+Iteration   6: 1,554 ±(99.9%) 0,594 s/op
+                 testCounterBakery·p0.00:   1,246 s/op
+                 testCounterBakery·p0.50:   1,531 s/op
+                 testCounterBakery·p0.90:   1,936 s/op
+                 testCounterBakery·p0.95:   1,936 s/op
+                 testCounterBakery·p0.99:   1,936 s/op
+                 testCounterBakery·p0.999:  1,936 s/op
+                 testCounterBakery·p0.9999: 1,936 s/op
+                 testCounterBakery·p1.00:   1,936 s/op
+
+Iteration   7: 1,397 ±(99.9%) 0,429 s/op
+                 testCounterBakery·p0.00:   1,172 s/op
+                 testCounterBakery·p0.50:   1,308 s/op
+                 testCounterBakery·p0.90:   1,766 s/op
+                 testCounterBakery·p0.95:   1,766 s/op
+                 testCounterBakery·p0.99:   1,766 s/op
+                 testCounterBakery·p0.999:  1,766 s/op
+                 testCounterBakery·p0.9999: 1,766 s/op
+                 testCounterBakery·p1.00:   1,766 s/op
+
+Iteration   8: 1,453 ±(99.9%) 0,535 s/op
+                 testCounterBakery·p0.00:   1,158 s/op
+                 testCounterBakery·p0.50:   1,518 s/op
+                 testCounterBakery·p0.90:   1,736 s/op
+                 testCounterBakery·p0.95:   1,736 s/op
+                 testCounterBakery·p0.99:   1,736 s/op
+                 testCounterBakery·p0.999:  1,736 s/op
+                 testCounterBakery·p0.9999: 1,736 s/op
+                 testCounterBakery·p1.00:   1,736 s/op
+
+Iteration   9: 1,551 ±(99.9%) 0,989 s/op
+                 testCounterBakery·p0.00:   1,191 s/op
+                 testCounterBakery·p0.50:   1,420 s/op
+                 testCounterBakery·p0.90:   2,512 s/op
+                 testCounterBakery·p0.95:   2,512 s/op
+                 testCounterBakery·p0.99:   2,512 s/op
+                 testCounterBakery·p0.999:  2,512 s/op
+                 testCounterBakery·p0.9999: 2,512 s/op
+                 testCounterBakery·p1.00:   2,512 s/op
+
+Iteration  10: 1,445 ±(99.9%) 0,478 s/op
+                 testCounterBakery·p0.00:   1,197 s/op
+                 testCounterBakery·p0.50:   1,395 s/op
+                 testCounterBakery·p0.90:   1,833 s/op
+                 testCounterBakery·p0.95:   1,833 s/op
+                 testCounterBakery·p0.99:   1,833 s/op
+                 testCounterBakery·p0.999:  1,833 s/op
+                 testCounterBakery·p0.9999: 1,833 s/op
+                 testCounterBakery·p1.00:   1,833 s/op
+
+
+# Run progress: 75,92% complete, ETA 00:29:31
+# Fork: 3 of 3
+# Warmup Iteration   1: 1,778 ±(99.9%) 0,588 s/op
+# Warmup Iteration   2: 1,777 ±(99.9%) 0,350 s/op
+# Warmup Iteration   3: 1,966 ±(99.9%) 0,562 s/op
+Iteration   1: 1,539 ±(99.9%) 0,205 s/op
+                 testCounterBakery·p0.00:   1,424 s/op
+                 testCounterBakery·p0.50:   1,539 s/op
+                 testCounterBakery·p0.90:   1,663 s/op
+                 testCounterBakery·p0.95:   1,663 s/op
+                 testCounterBakery·p0.99:   1,663 s/op
+                 testCounterBakery·p0.999:  1,663 s/op
+                 testCounterBakery·p0.9999: 1,663 s/op
+                 testCounterBakery·p1.00:   1,663 s/op
+
+Iteration   2: 1,832 ±(99.9%) 0,564 s/op
+                 testCounterBakery·p0.00:   1,571 s/op
+                 testCounterBakery·p0.50:   1,859 s/op
+                 testCounterBakery·p0.90:   2,129 s/op
+                 testCounterBakery·p0.95:   2,129 s/op
+                 testCounterBakery·p0.99:   2,129 s/op
+                 testCounterBakery·p0.999:  2,129 s/op
+                 testCounterBakery·p0.9999: 2,129 s/op
+                 testCounterBakery·p1.00:   2,129 s/op
+
+Iteration   3: 1,670 ±(99.9%) 0,704 s/op
+                 testCounterBakery·p0.00:   1,386 s/op
+                 testCounterBakery·p0.50:   1,712 s/op
+                 testCounterBakery·p0.90:   2,030 s/op
+                 testCounterBakery·p0.95:   2,030 s/op
+                 testCounterBakery·p0.99:   2,030 s/op
+                 testCounterBakery·p0.999:  2,030 s/op
+                 testCounterBakery·p0.9999: 2,030 s/op
+                 testCounterBakery·p1.00:   2,030 s/op
+
+Iteration   4: 1,709 ±(99.9%) 0,509 s/op
+                 testCounterBakery·p0.00:   1,466 s/op
+                 testCounterBakery·p0.50:   1,780 s/op
+                 testCounterBakery·p0.90:   1,869 s/op
+                 testCounterBakery·p0.95:   1,869 s/op
+                 testCounterBakery·p0.99:   1,869 s/op
+                 testCounterBakery·p0.999:  1,869 s/op
+                 testCounterBakery·p0.9999: 1,869 s/op
+                 testCounterBakery·p1.00:   1,869 s/op
+
+Iteration   5: 1,576 ±(99.9%) 0,627 s/op
+                 testCounterBakery·p0.00:   1,351 s/op
+                 testCounterBakery·p0.50:   1,520 s/op
+                 testCounterBakery·p0.90:   2,156 s/op
+                 testCounterBakery·p0.95:   2,156 s/op
+                 testCounterBakery·p0.99:   2,156 s/op
+                 testCounterBakery·p0.999:  2,156 s/op
+                 testCounterBakery·p0.9999: 2,156 s/op
+                 testCounterBakery·p1.00:   2,156 s/op
+
+Iteration   6: 1,621 ±(99.9%) 0,507 s/op
+                 testCounterBakery·p0.00:   1,332 s/op
+                 testCounterBakery·p0.50:   1,596 s/op
+                 testCounterBakery·p0.90:   1,996 s/op
+                 testCounterBakery·p0.95:   1,996 s/op
+                 testCounterBakery·p0.99:   1,996 s/op
+                 testCounterBakery·p0.999:  1,996 s/op
+                 testCounterBakery·p0.9999: 1,996 s/op
+                 testCounterBakery·p1.00:   1,996 s/op
+
+Iteration   7: 1,687 ±(99.9%) 0,509 s/op
+                 testCounterBakery·p0.00:   1,397 s/op
+                 testCounterBakery·p0.50:   1,753 s/op
+                 testCounterBakery·p0.90:   1,957 s/op
+                 testCounterBakery·p0.95:   1,957 s/op
+                 testCounterBakery·p0.99:   1,957 s/op
+                 testCounterBakery·p0.999:  1,957 s/op
+                 testCounterBakery·p0.9999: 1,957 s/op
+                 testCounterBakery·p1.00:   1,957 s/op
+
+Iteration   8: 1,646 ±(99.9%) 0,492 s/op
+                 testCounterBakery·p0.00:   1,439 s/op
+                 testCounterBakery·p0.50:   1,650 s/op
+                 testCounterBakery·p0.90:   2,028 s/op
+                 testCounterBakery·p0.95:   2,028 s/op
+                 testCounterBakery·p0.99:   2,028 s/op
+                 testCounterBakery·p0.999:  2,028 s/op
+                 testCounterBakery·p0.9999: 2,028 s/op
+                 testCounterBakery·p1.00:   2,028 s/op
+
+Iteration   9: 1,852 ±(99.9%) 1,143 s/op
+                 testCounterBakery·p0.00:   1,439 s/op
+                 testCounterBakery·p0.50:   1,800 s/op
+                 testCounterBakery·p0.90:   2,617 s/op
+                 testCounterBakery·p0.95:   2,617 s/op
+                 testCounterBakery·p0.99:   2,617 s/op
+                 testCounterBakery·p0.999:  2,617 s/op
+                 testCounterBakery·p0.9999: 2,617 s/op
+                 testCounterBakery·p1.00:   2,617 s/op
+
+Iteration  10: 2,109 ±(99.9%) 0,319 s/op
+                 testCounterBakery·p0.00:   2,011 s/op
+                 testCounterBakery·p0.50:   2,085 s/op
+                 testCounterBakery·p0.90:   2,231 s/op
+                 testCounterBakery·p0.95:   2,231 s/op
+                 testCounterBakery·p0.99:   2,231 s/op
+                 testCounterBakery·p0.999:  2,231 s/op
+                 testCounterBakery·p0.9999: 2,231 s/op
+                 testCounterBakery·p1.00:   2,231 s/op
+
+
+
+Result "mipt.bit.MyBenchmark.testCounterBakery":
+  N = 200
+  mean =      1,622 ±(99.9%) 0,063 s/op
+
+  Histogram, s/op:
+    [1,000, 1,125) = 0
+    [1,125, 1,250) = 16
+    [1,250, 1,375) = 18
+    [1,375, 1,500) = 38
+    [1,500, 1,625) = 37
+    [1,625, 1,750) = 29
+    [1,750, 1,875) = 26
+    [1,875, 2,000) = 20
+    [2,000, 2,125) = 8
+    [2,125, 2,250) = 6
+    [2,250, 2,375) = 0
+    [2,375, 2,500) = 0
+    [2,500, 2,625) = 2
+    [2,625, 2,750) = 0
+    [2,750, 2,875) = 0
+
+  Percentiles, s/op:
+      p(0,0000) =      1,158 s/op
+     p(50,0000) =      1,593 s/op
+     p(90,0000) =      1,984 s/op
+     p(95,0000) =      2,076 s/op
+     p(99,0000) =      2,510 s/op
+     p(99,9000) =      2,617 s/op
+     p(99,9900) =      2,617 s/op
+     p(99,9990) =      2,617 s/op
+     p(99,9999) =      2,617 s/op
+    p(100,0000) =      2,617 s/op
+
+
+# JMH version: 1.21
+# VM version: JDK 11.0.1, Java HotSpot(TM) 64-Bit Server VM, 11.0.1+13-LTS
+# VM invoker: C:\Program Files\Java\jdk-11.0.1\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.2\lib\idea_rt.jar=59429:C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.2\bin -Dfile.encoding=UTF-8
+# Warmup: 3 iterations, 10 s each
+# Measurement: 10 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: mipt.bit.MyBenchmark.testCounterLock
+
+# Run progress: 77,78% complete, ETA 00:27:17
+# Fork: 1 of 3
+# Warmup Iteration   1: 0,460 ±(99.9%) 0,063 s/op
+# Warmup Iteration   2: 0,437 ±(99.9%) 0,074 s/op
+# Warmup Iteration   3: 0,447 ±(99.9%) 0,078 s/op
+Iteration   1: 0,443 ±(99.9%) 0,083 s/op
+                 testCounterLock·p0.00:   0,304 s/op
+                 testCounterLock·p0.50:   0,482 s/op
+                 testCounterLock·p0.90:   0,539 s/op
+                 testCounterLock·p0.95:   0,668 s/op
+                 testCounterLock·p0.99:   0,700 s/op
+                 testCounterLock·p0.999:  0,700 s/op
+                 testCounterLock·p0.9999: 0,700 s/op
+                 testCounterLock·p1.00:   0,700 s/op
+
+Iteration   2: 0,444 ±(99.9%) 0,073 s/op
+                 testCounterLock·p0.00:   0,303 s/op
+                 testCounterLock·p0.50:   0,475 s/op
+                 testCounterLock·p0.90:   0,532 s/op
+                 testCounterLock·p0.95:   0,590 s/op
+                 testCounterLock·p0.99:   0,604 s/op
+                 testCounterLock·p0.999:  0,604 s/op
+                 testCounterLock·p0.9999: 0,604 s/op
+                 testCounterLock·p1.00:   0,604 s/op
+
+Iteration   3: 0,451 ±(99.9%) 0,084 s/op
+                 testCounterLock·p0.00:   0,277 s/op
+                 testCounterLock·p0.50:   0,499 s/op
+                 testCounterLock·p0.90:   0,571 s/op
+                 testCounterLock·p0.95:   0,596 s/op
+                 testCounterLock·p0.99:   0,599 s/op
+                 testCounterLock·p0.999:  0,599 s/op
+                 testCounterLock·p0.9999: 0,599 s/op
+                 testCounterLock·p1.00:   0,599 s/op
+
+Iteration   4: 0,506 ±(99.9%) 0,098 s/op
+                 testCounterLock·p0.00:   0,306 s/op
+                 testCounterLock·p0.50:   0,543 s/op
+                 testCounterLock·p0.90:   0,641 s/op
+                 testCounterLock·p0.95:   0,648 s/op
+                 testCounterLock·p0.99:   0,648 s/op
+                 testCounterLock·p0.999:  0,648 s/op
+                 testCounterLock·p0.9999: 0,648 s/op
+                 testCounterLock·p1.00:   0,648 s/op
+
+Iteration   5: 0,500 ±(99.9%) 0,108 s/op
+                 testCounterLock·p0.00:   0,277 s/op
+                 testCounterLock·p0.50:   0,552 s/op
+                 testCounterLock·p0.90:   0,624 s/op
+                 testCounterLock·p0.95:   0,655 s/op
+                 testCounterLock·p0.99:   0,659 s/op
+                 testCounterLock·p0.999:  0,659 s/op
+                 testCounterLock·p0.9999: 0,659 s/op
+                 testCounterLock·p1.00:   0,659 s/op
+
+Iteration   6: 0,479 ±(99.9%) 0,093 s/op
+                 testCounterLock·p0.00:   0,293 s/op
+                 testCounterLock·p0.50:   0,508 s/op
+                 testCounterLock·p0.90:   0,595 s/op
+                 testCounterLock·p0.95:   0,654 s/op
+                 testCounterLock·p0.99:   0,661 s/op
+                 testCounterLock·p0.999:  0,661 s/op
+                 testCounterLock·p0.9999: 0,661 s/op
+                 testCounterLock·p1.00:   0,661 s/op
+
+Iteration   7: 0,477 ±(99.9%) 0,080 s/op
+                 testCounterLock·p0.00:   0,292 s/op
+                 testCounterLock·p0.50:   0,526 s/op
+                 testCounterLock·p0.90:   0,564 s/op
+                 testCounterLock·p0.95:   0,567 s/op
+                 testCounterLock·p0.99:   0,567 s/op
+                 testCounterLock·p0.999:  0,567 s/op
+                 testCounterLock·p0.9999: 0,567 s/op
+                 testCounterLock·p1.00:   0,567 s/op
+
+Iteration   8: 0,513 ±(99.9%) 0,080 s/op
+                 testCounterLock·p0.00:   0,333 s/op
+                 testCounterLock·p0.50:   0,545 s/op
+                 testCounterLock·p0.90:   0,605 s/op
+                 testCounterLock·p0.95:   0,606 s/op
+                 testCounterLock·p0.99:   0,606 s/op
+                 testCounterLock·p0.999:  0,606 s/op
+                 testCounterLock·p0.9999: 0,606 s/op
+                 testCounterLock·p1.00:   0,606 s/op
+
+Iteration   9: 0,509 ±(99.9%) 0,101 s/op
+                 testCounterLock·p0.00:   0,336 s/op
+                 testCounterLock·p0.50:   0,552 s/op
+                 testCounterLock·p0.90:   0,646 s/op
+                 testCounterLock·p0.95:   0,649 s/op
+                 testCounterLock·p0.99:   0,649 s/op
+                 testCounterLock·p0.999:  0,649 s/op
+                 testCounterLock·p0.9999: 0,649 s/op
+                 testCounterLock·p1.00:   0,649 s/op
+
+Iteration  10: 0,512 ±(99.9%) 0,111 s/op
+                 testCounterLock·p0.00:   0,340 s/op
+                 testCounterLock·p0.50:   0,514 s/op
+                 testCounterLock·p0.90:   0,691 s/op
+                 testCounterLock·p0.95:   0,724 s/op
+                 testCounterLock·p0.99:   0,726 s/op
+                 testCounterLock·p0.999:  0,726 s/op
+                 testCounterLock·p0.9999: 0,726 s/op
+                 testCounterLock·p1.00:   0,726 s/op
+
+
+# Run progress: 79,63% complete, ETA 00:25:00
+# Fork: 2 of 3
+# Warmup Iteration   1: 0,483 ±(99.9%) 0,069 s/op
+# Warmup Iteration   2: 0,444 ±(99.9%) 0,070 s/op
+# Warmup Iteration   3: 0,479 ±(99.9%) 0,102 s/op
+Iteration   1: 0,500 ±(99.9%) 0,086 s/op
+                 testCounterLock·p0.00:   0,311 s/op
+                 testCounterLock·p0.50:   0,536 s/op
+                 testCounterLock·p0.90:   0,601 s/op
+                 testCounterLock·p0.95:   0,636 s/op
+                 testCounterLock·p0.99:   0,640 s/op
+                 testCounterLock·p0.999:  0,640 s/op
+                 testCounterLock·p0.9999: 0,640 s/op
+                 testCounterLock·p1.00:   0,640 s/op
+
+Iteration   2: 0,509 ±(99.9%) 0,107 s/op
+                 testCounterLock·p0.00:   0,298 s/op
+                 testCounterLock·p0.50:   0,549 s/op
+                 testCounterLock·p0.90:   0,643 s/op
+                 testCounterLock·p0.95:   0,649 s/op
+                 testCounterLock·p0.99:   0,649 s/op
+                 testCounterLock·p0.999:  0,649 s/op
+                 testCounterLock·p0.9999: 0,649 s/op
+                 testCounterLock·p1.00:   0,649 s/op
+
+Iteration   3: 0,476 ±(99.9%) 0,083 s/op
+                 testCounterLock·p0.00:   0,323 s/op
+                 testCounterLock·p0.50:   0,514 s/op
+                 testCounterLock·p0.90:   0,587 s/op
+                 testCounterLock·p0.95:   0,596 s/op
+                 testCounterLock·p0.99:   0,597 s/op
+                 testCounterLock·p0.999:  0,597 s/op
+                 testCounterLock·p0.9999: 0,597 s/op
+                 testCounterLock·p1.00:   0,597 s/op
+
+Iteration   4: 0,542 ±(99.9%) 0,122 s/op
+                 testCounterLock·p0.00:   0,330 s/op
+                 testCounterLock·p0.50:   0,592 s/op
+                 testCounterLock·p0.90:   0,682 s/op
+                 testCounterLock·p0.95:   0,758 s/op
+                 testCounterLock·p0.99:   0,758 s/op
+                 testCounterLock·p0.999:  0,758 s/op
+                 testCounterLock·p0.9999: 0,758 s/op
+                 testCounterLock·p1.00:   0,758 s/op
+
+Iteration   5: 0,494 ±(99.9%) 0,095 s/op
+                 testCounterLock·p0.00:   0,308 s/op
+                 testCounterLock·p0.50:   0,511 s/op
+                 testCounterLock·p0.90:   0,633 s/op
+                 testCounterLock·p0.95:   0,654 s/op
+                 testCounterLock·p0.99:   0,656 s/op
+                 testCounterLock·p0.999:  0,656 s/op
+                 testCounterLock·p0.9999: 0,656 s/op
+                 testCounterLock·p1.00:   0,656 s/op
+
+Iteration   6: 0,557 ±(99.9%) 0,114 s/op
+                 testCounterLock·p0.00:   0,340 s/op
+                 testCounterLock·p0.50:   0,591 s/op
+                 testCounterLock·p0.90:   0,719 s/op
+                 testCounterLock·p0.95:   0,724 s/op
+                 testCounterLock·p0.99:   0,724 s/op
+                 testCounterLock·p0.999:  0,724 s/op
+                 testCounterLock·p0.9999: 0,724 s/op
+                 testCounterLock·p1.00:   0,724 s/op
+
+Iteration   7: 0,561 ±(99.9%) 0,146 s/op
+                 testCounterLock·p0.00:   0,249 s/op
+                 testCounterLock·p0.50:   0,608 s/op
+                 testCounterLock·p0.90:   0,720 s/op
+                 testCounterLock·p0.95:   0,772 s/op
+                 testCounterLock·p0.99:   0,772 s/op
+                 testCounterLock·p0.999:  0,772 s/op
+                 testCounterLock·p0.9999: 0,772 s/op
+                 testCounterLock·p1.00:   0,772 s/op
+
+Iteration   8: 0,645 ±(99.9%) 0,140 s/op
+                 testCounterLock·p0.00:   0,368 s/op
+                 testCounterLock·p0.50:   0,697 s/op
+                 testCounterLock·p0.90:   0,788 s/op
+                 testCounterLock·p0.95:   0,812 s/op
+                 testCounterLock·p0.99:   0,812 s/op
+                 testCounterLock·p0.999:  0,812 s/op
+                 testCounterLock·p0.9999: 0,812 s/op
+                 testCounterLock·p1.00:   0,812 s/op
+
+Iteration   9: 0,603 ±(99.9%) 0,159 s/op
+                 testCounterLock·p0.00:   0,348 s/op
+                 testCounterLock·p0.50:   0,676 s/op
+                 testCounterLock·p0.90:   0,754 s/op
+                 testCounterLock·p0.95:   0,795 s/op
+                 testCounterLock·p0.99:   0,795 s/op
+                 testCounterLock·p0.999:  0,795 s/op
+                 testCounterLock·p0.9999: 0,795 s/op
+                 testCounterLock·p1.00:   0,795 s/op
+
+Iteration  10: 0,696 ±(99.9%) 0,148 s/op
+                 testCounterLock·p0.00:   0,423 s/op
+                 testCounterLock·p0.50:   0,714 s/op
+                 testCounterLock·p0.90:   0,839 s/op
+                 testCounterLock·p0.95:   0,870 s/op
+                 testCounterLock·p0.99:   0,870 s/op
+                 testCounterLock·p0.999:  0,870 s/op
+                 testCounterLock·p0.9999: 0,870 s/op
+                 testCounterLock·p1.00:   0,870 s/op
+
+
+# Run progress: 81,48% complete, ETA 00:22:44
+# Fork: 3 of 3
+# Warmup Iteration   1: 0,483 ±(99.9%) 0,075 s/op
+# Warmup Iteration   2: 0,456 ±(99.9%) 0,063 s/op
+# Warmup Iteration   3: 0,482 ±(99.9%) 0,081 s/op
+Iteration   1: 0,484 ±(99.9%) 0,078 s/op
+                 testCounterLock·p0.00:   0,316 s/op
+                 testCounterLock·p0.50:   0,520 s/op
+                 testCounterLock·p0.90:   0,570 s/op
+                 testCounterLock·p0.95:   0,600 s/op
+                 testCounterLock·p0.99:   0,603 s/op
+                 testCounterLock·p0.999:  0,603 s/op
+                 testCounterLock·p0.9999: 0,603 s/op
+                 testCounterLock·p1.00:   0,603 s/op
+
+Iteration   2: 0,486 ±(99.9%) 0,084 s/op
+                 testCounterLock·p0.00:   0,313 s/op
+                 testCounterLock·p0.50:   0,522 s/op
+                 testCounterLock·p0.90:   0,598 s/op
+                 testCounterLock·p0.95:   0,649 s/op
+                 testCounterLock·p0.99:   0,653 s/op
+                 testCounterLock·p0.999:  0,653 s/op
+                 testCounterLock·p0.9999: 0,653 s/op
+                 testCounterLock·p1.00:   0,653 s/op
+
+Iteration   3: 0,479 ±(99.9%) 0,083 s/op
+                 testCounterLock·p0.00:   0,316 s/op
+                 testCounterLock·p0.50:   0,511 s/op
+                 testCounterLock·p0.90:   0,575 s/op
+                 testCounterLock·p0.95:   0,618 s/op
+                 testCounterLock·p0.99:   0,623 s/op
+                 testCounterLock·p0.999:  0,623 s/op
+                 testCounterLock·p0.9999: 0,623 s/op
+                 testCounterLock·p1.00:   0,623 s/op
+
+Iteration   4: 0,507 ±(99.9%) 0,096 s/op
+                 testCounterLock·p0.00:   0,327 s/op
+                 testCounterLock·p0.50:   0,524 s/op
+                 testCounterLock·p0.90:   0,678 s/op
+                 testCounterLock·p0.95:   0,699 s/op
+                 testCounterLock·p0.99:   0,699 s/op
+                 testCounterLock·p0.999:  0,699 s/op
+                 testCounterLock·p0.9999: 0,699 s/op
+                 testCounterLock·p1.00:   0,699 s/op
+
+Iteration   5: 0,512 ±(99.9%) 0,091 s/op
+                 testCounterLock·p0.00:   0,334 s/op
+                 testCounterLock·p0.50:   0,538 s/op
+                 testCounterLock·p0.90:   0,629 s/op
+                 testCounterLock·p0.95:   0,669 s/op
+                 testCounterLock·p0.99:   0,671 s/op
+                 testCounterLock·p0.999:  0,671 s/op
+                 testCounterLock·p0.9999: 0,671 s/op
+                 testCounterLock·p1.00:   0,671 s/op
+
+Iteration   6: 0,506 ±(99.9%) 0,104 s/op
+                 testCounterLock·p0.00:   0,317 s/op
+                 testCounterLock·p0.50:   0,541 s/op
+                 testCounterLock·p0.90:   0,655 s/op
+                 testCounterLock·p0.95:   0,682 s/op
+                 testCounterLock·p0.99:   0,683 s/op
+                 testCounterLock·p0.999:  0,683 s/op
+                 testCounterLock·p0.9999: 0,683 s/op
+                 testCounterLock·p1.00:   0,683 s/op
+
+Iteration   7: 0,517 ±(99.9%) 0,089 s/op
+                 testCounterLock·p0.00:   0,329 s/op
+                 testCounterLock·p0.50:   0,544 s/op
+                 testCounterLock·p0.90:   0,629 s/op
+                 testCounterLock·p0.95:   0,696 s/op
+                 testCounterLock·p0.99:   0,699 s/op
+                 testCounterLock·p0.999:  0,699 s/op
+                 testCounterLock·p0.9999: 0,699 s/op
+                 testCounterLock·p1.00:   0,699 s/op
+
+Iteration   8: 0,512 ±(99.9%) 0,101 s/op
+                 testCounterLock·p0.00:   0,312 s/op
+                 testCounterLock·p0.50:   0,551 s/op
+                 testCounterLock·p0.90:   0,662 s/op
+                 testCounterLock·p0.95:   0,683 s/op
+                 testCounterLock·p0.99:   0,684 s/op
+                 testCounterLock·p0.999:  0,684 s/op
+                 testCounterLock·p0.9999: 0,684 s/op
+                 testCounterLock·p1.00:   0,684 s/op
+
+Iteration   9: 0,568 ±(99.9%) 0,126 s/op
+                 testCounterLock·p0.00:   0,330 s/op
+                 testCounterLock·p0.50:   0,597 s/op
+                 testCounterLock·p0.90:   0,723 s/op
+                 testCounterLock·p0.95:   0,726 s/op
+                 testCounterLock·p0.99:   0,726 s/op
+                 testCounterLock·p0.999:  0,726 s/op
+                 testCounterLock·p0.9999: 0,726 s/op
+                 testCounterLock·p1.00:   0,726 s/op
+
+Iteration  10: 0,546 ±(99.9%) 0,109 s/op
+                 testCounterLock·p0.00:   0,339 s/op
+                 testCounterLock·p0.50:   0,589 s/op
+                 testCounterLock·p0.90:   0,679 s/op
+                 testCounterLock·p0.95:   0,696 s/op
+                 testCounterLock·p0.99:   0,696 s/op
+                 testCounterLock·p0.999:  0,696 s/op
+                 testCounterLock·p0.9999: 0,696 s/op
+                 testCounterLock·p1.00:   0,696 s/op
+
+
+
+Result "mipt.bit.MyBenchmark.testCounterLock":
+  N = 599
+  mean =      0,513 ±(99.9%) 0,017 s/op
+
+  Histogram, s/op:
+    [0,200, 0,250) = 1
+    [0,250, 0,300) = 8
+    [0,300, 0,350) = 95
+    [0,350, 0,400) = 55
+    [0,400, 0,450) = 10
+    [0,450, 0,500) = 44
+    [0,500, 0,550) = 134
+    [0,550, 0,600) = 115
+    [0,600, 0,650) = 67
+    [0,650, 0,700) = 32
+    [0,700, 0,750) = 25
+    [0,750, 0,800) = 8
+    [0,800, 0,850) = 4
+
+  Percentiles, s/op:
+      p(0,0000) =      0,249 s/op
+     p(50,0000) =      0,534 s/op
+     p(90,0000) =      0,664 s/op
+     p(95,0000) =      0,710 s/op
+     p(99,0000) =      0,796 s/op
+     p(99,9000) =      0,870 s/op
+     p(99,9900) =      0,870 s/op
+     p(99,9990) =      0,870 s/op
+     p(99,9999) =      0,870 s/op
+    p(100,0000) =      0,870 s/op
+
+
+# JMH version: 1.21
+# VM version: JDK 11.0.1, Java HotSpot(TM) 64-Bit Server VM, 11.0.1+13-LTS
+# VM invoker: C:\Program Files\Java\jdk-11.0.1\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.2\lib\idea_rt.jar=59429:C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.2\bin -Dfile.encoding=UTF-8
+# Warmup: 3 iterations, 10 s each
+# Measurement: 10 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: mipt.bit.MyBenchmark.testCounterQueue
+
+# Run progress: 83,33% complete, ETA 00:20:27
+# Fork: 1 of 3
+# Warmup Iteration   1: 0,540 ±(99.9%) 0,109 s/op
+# Warmup Iteration   2: 0,494 ±(99.9%) 0,091 s/op
+# Warmup Iteration   3: 0,536 ±(99.9%) 0,106 s/op
+Iteration   1: 0,534 ±(99.9%) 0,123 s/op
+                 testCounterQueue·p0.00:   0,325 s/op
+                 testCounterQueue·p0.50:   0,590 s/op
+                 testCounterQueue·p0.90:   0,669 s/op
+                 testCounterQueue·p0.95:   0,698 s/op
+                 testCounterQueue·p0.99:   0,698 s/op
+                 testCounterQueue·p0.999:  0,698 s/op
+                 testCounterQueue·p0.9999: 0,698 s/op
+                 testCounterQueue·p1.00:   0,698 s/op
+
+Iteration   2: 0,538 ±(99.9%) 0,096 s/op
+                 testCounterQueue·p0.00:   0,353 s/op
+                 testCounterQueue·p0.50:   0,560 s/op
+                 testCounterQueue·p0.90:   0,655 s/op
+                 testCounterQueue·p0.95:   0,696 s/op
+                 testCounterQueue·p0.99:   0,696 s/op
+                 testCounterQueue·p0.999:  0,696 s/op
+                 testCounterQueue·p0.9999: 0,696 s/op
+                 testCounterQueue·p1.00:   0,696 s/op
+
+Iteration   3: 0,595 ±(99.9%) 0,115 s/op
+                 testCounterQueue·p0.00:   0,389 s/op
+                 testCounterQueue·p0.50:   0,634 s/op
+                 testCounterQueue·p0.90:   0,716 s/op
+                 testCounterQueue·p0.95:   0,751 s/op
+                 testCounterQueue·p0.99:   0,751 s/op
+                 testCounterQueue·p0.999:  0,751 s/op
+                 testCounterQueue·p0.9999: 0,751 s/op
+                 testCounterQueue·p1.00:   0,751 s/op
+
+Iteration   4: 0,585 ±(99.9%) 0,121 s/op
+                 testCounterQueue·p0.00:   0,354 s/op
+                 testCounterQueue·p0.50:   0,626 s/op
+                 testCounterQueue·p0.90:   0,730 s/op
+                 testCounterQueue·p0.95:   0,747 s/op
+                 testCounterQueue·p0.99:   0,747 s/op
+                 testCounterQueue·p0.999:  0,747 s/op
+                 testCounterQueue·p0.9999: 0,747 s/op
+                 testCounterQueue·p1.00:   0,747 s/op
+
+Iteration   5: 0,574 ±(99.9%) 0,123 s/op
+                 testCounterQueue·p0.00:   0,343 s/op
+                 testCounterQueue·p0.50:   0,614 s/op
+                 testCounterQueue·p0.90:   0,741 s/op
+                 testCounterQueue·p0.95:   0,749 s/op
+                 testCounterQueue·p0.99:   0,749 s/op
+                 testCounterQueue·p0.999:  0,749 s/op
+                 testCounterQueue·p0.9999: 0,749 s/op
+                 testCounterQueue·p1.00:   0,749 s/op
+
+Iteration   6: 0,566 ±(99.9%) 0,119 s/op
+                 testCounterQueue·p0.00:   0,350 s/op
+                 testCounterQueue·p0.50:   0,589 s/op
+                 testCounterQueue·p0.90:   0,674 s/op
+                 testCounterQueue·p0.95:   0,866 s/op
+                 testCounterQueue·p0.99:   0,866 s/op
+                 testCounterQueue·p0.999:  0,866 s/op
+                 testCounterQueue·p0.9999: 0,866 s/op
+                 testCounterQueue·p1.00:   0,866 s/op
+
+Iteration   7: 0,603 ±(99.9%) 0,135 s/op
+                 testCounterQueue·p0.00:   0,374 s/op
+                 testCounterQueue·p0.50:   0,641 s/op
+                 testCounterQueue·p0.90:   0,766 s/op
+                 testCounterQueue·p0.95:   0,767 s/op
+                 testCounterQueue·p0.99:   0,767 s/op
+                 testCounterQueue·p0.999:  0,767 s/op
+                 testCounterQueue·p0.9999: 0,767 s/op
+                 testCounterQueue·p1.00:   0,767 s/op
+
+Iteration   8: 0,587 ±(99.9%) 0,149 s/op
+                 testCounterQueue·p0.00:   0,347 s/op
+                 testCounterQueue·p0.50:   0,645 s/op
+                 testCounterQueue·p0.90:   0,769 s/op
+                 testCounterQueue·p0.95:   0,806 s/op
+                 testCounterQueue·p0.99:   0,806 s/op
+                 testCounterQueue·p0.999:  0,806 s/op
+                 testCounterQueue·p0.9999: 0,806 s/op
+                 testCounterQueue·p1.00:   0,806 s/op
+
+Iteration   9: 0,605 ±(99.9%) 0,155 s/op
+                 testCounterQueue·p0.00:   0,353 s/op
+                 testCounterQueue·p0.50:   0,630 s/op
+                 testCounterQueue·p0.90:   0,806 s/op
+                 testCounterQueue·p0.95:   0,811 s/op
+                 testCounterQueue·p0.99:   0,811 s/op
+                 testCounterQueue·p0.999:  0,811 s/op
+                 testCounterQueue·p0.9999: 0,811 s/op
+                 testCounterQueue·p1.00:   0,811 s/op
+
+Iteration  10: 0,592 ±(99.9%) 0,132 s/op
+                 testCounterQueue·p0.00:   0,357 s/op
+                 testCounterQueue·p0.50:   0,630 s/op
+                 testCounterQueue·p0.90:   0,759 s/op
+                 testCounterQueue·p0.95:   0,795 s/op
+                 testCounterQueue·p0.99:   0,795 s/op
+                 testCounterQueue·p0.999:  0,795 s/op
+                 testCounterQueue·p0.9999: 0,795 s/op
+                 testCounterQueue·p1.00:   0,795 s/op
+
+
+# Run progress: 85,18% complete, ETA 00:18:11
+# Fork: 2 of 3
+# Warmup Iteration   1: 0,545 ±(99.9%) 0,075 s/op
+# Warmup Iteration   2: 0,494 ±(99.9%) 0,095 s/op
+# Warmup Iteration   3: 0,534 ±(99.9%) 0,109 s/op
+Iteration   1: 0,521 ±(99.9%) 0,089 s/op
+                 testCounterQueue·p0.00:   0,354 s/op
+                 testCounterQueue·p0.50:   0,538 s/op
+                 testCounterQueue·p0.90:   0,659 s/op
+                 testCounterQueue·p0.95:   0,697 s/op
+                 testCounterQueue·p0.99:   0,699 s/op
+                 testCounterQueue·p0.999:  0,699 s/op
+                 testCounterQueue·p0.9999: 0,699 s/op
+                 testCounterQueue·p1.00:   0,699 s/op
+
+Iteration   2: 0,550 ±(99.9%) 0,106 s/op
+                 testCounterQueue·p0.00:   0,353 s/op
+                 testCounterQueue·p0.50:   0,585 s/op
+                 testCounterQueue·p0.90:   0,687 s/op
+                 testCounterQueue·p0.95:   0,710 s/op
+                 testCounterQueue·p0.99:   0,710 s/op
+                 testCounterQueue·p0.999:  0,710 s/op
+                 testCounterQueue·p0.9999: 0,710 s/op
+                 testCounterQueue·p1.00:   0,710 s/op
+
+Iteration   3: 0,558 ±(99.9%) 0,112 s/op
+                 testCounterQueue·p0.00:   0,346 s/op
+                 testCounterQueue·p0.50:   0,591 s/op
+                 testCounterQueue·p0.90:   0,703 s/op
+                 testCounterQueue·p0.95:   0,742 s/op
+                 testCounterQueue·p0.99:   0,742 s/op
+                 testCounterQueue·p0.999:  0,742 s/op
+                 testCounterQueue·p0.9999: 0,742 s/op
+                 testCounterQueue·p1.00:   0,742 s/op
+
+Iteration   4: 0,542 ±(99.9%) 0,095 s/op
+                 testCounterQueue·p0.00:   0,353 s/op
+                 testCounterQueue·p0.50:   0,579 s/op
+                 testCounterQueue·p0.90:   0,668 s/op
+                 testCounterQueue·p0.95:   0,704 s/op
+                 testCounterQueue·p0.99:   0,704 s/op
+                 testCounterQueue·p0.999:  0,704 s/op
+                 testCounterQueue·p0.9999: 0,704 s/op
+                 testCounterQueue·p1.00:   0,704 s/op
+
+Iteration   5: 0,576 ±(99.9%) 0,136 s/op
+                 testCounterQueue·p0.00:   0,336 s/op
+                 testCounterQueue·p0.50:   0,621 s/op
+                 testCounterQueue·p0.90:   0,748 s/op
+                 testCounterQueue·p0.95:   0,772 s/op
+                 testCounterQueue·p0.99:   0,772 s/op
+                 testCounterQueue·p0.999:  0,772 s/op
+                 testCounterQueue·p0.9999: 0,772 s/op
+                 testCounterQueue·p1.00:   0,772 s/op
+
+Iteration   6: 0,619 ±(99.9%) 0,102 s/op
+                 testCounterQueue·p0.00:   0,445 s/op
+                 testCounterQueue·p0.50:   0,652 s/op
+                 testCounterQueue·p0.90:   0,727 s/op
+                 testCounterQueue·p0.95:   0,736 s/op
+                 testCounterQueue·p0.99:   0,736 s/op
+                 testCounterQueue·p0.999:  0,736 s/op
+                 testCounterQueue·p0.9999: 0,736 s/op
+                 testCounterQueue·p1.00:   0,736 s/op
+
+Iteration   7: 0,633 ±(99.9%) 0,152 s/op
+                 testCounterQueue·p0.00:   0,417 s/op
+                 testCounterQueue·p0.50:   0,639 s/op
+                 testCounterQueue·p0.90:   0,834 s/op
+                 testCounterQueue·p0.95:   0,854 s/op
+                 testCounterQueue·p0.99:   0,854 s/op
+                 testCounterQueue·p0.999:  0,854 s/op
+                 testCounterQueue·p0.9999: 0,854 s/op
+                 testCounterQueue·p1.00:   0,854 s/op
+
+Iteration   8: 0,669 ±(99.9%) 0,149 s/op
+                 testCounterQueue·p0.00:   0,444 s/op
+                 testCounterQueue·p0.50:   0,740 s/op
+                 testCounterQueue·p0.90:   0,820 s/op
+                 testCounterQueue·p0.95:   0,832 s/op
+                 testCounterQueue·p0.99:   0,832 s/op
+                 testCounterQueue·p0.999:  0,832 s/op
+                 testCounterQueue·p0.9999: 0,832 s/op
+                 testCounterQueue·p1.00:   0,832 s/op
+
+Iteration   9: 0,692 ±(99.9%) 0,121 s/op
+                 testCounterQueue·p0.00:   0,468 s/op
+                 testCounterQueue·p0.50:   0,727 s/op
+                 testCounterQueue·p0.90:   0,800 s/op
+                 testCounterQueue·p0.95:   0,801 s/op
+                 testCounterQueue·p0.99:   0,801 s/op
+                 testCounterQueue·p0.999:  0,801 s/op
+                 testCounterQueue·p0.9999: 0,801 s/op
+                 testCounterQueue·p1.00:   0,801 s/op
+
+Iteration  10: 0,695 ±(99.9%) 0,140 s/op
+                 testCounterQueue·p0.00:   0,462 s/op
+                 testCounterQueue·p0.50:   0,747 s/op
+                 testCounterQueue·p0.90:   0,825 s/op
+                 testCounterQueue·p0.95:   0,825 s/op
+                 testCounterQueue·p0.99:   0,825 s/op
+                 testCounterQueue·p0.999:  0,825 s/op
+                 testCounterQueue·p0.9999: 0,825 s/op
+                 testCounterQueue·p1.00:   0,825 s/op
+
+
+# Run progress: 87,03% complete, ETA 00:15:54
+# Fork: 3 of 3
+# Warmup Iteration   1: 0,486 ±(99.9%) 0,088 s/op
+# Warmup Iteration   2: 0,480 ±(99.9%) 0,089 s/op
+# Warmup Iteration   3: 0,499 ±(99.9%) 0,104 s/op
+Iteration   1: 0,498 ±(99.9%) 0,078 s/op
+                 testCounterQueue·p0.00:   0,330 s/op
+                 testCounterQueue·p0.50:   0,536 s/op
+                 testCounterQueue·p0.90:   0,608 s/op
+                 testCounterQueue·p0.95:   0,611 s/op
+                 testCounterQueue·p0.99:   0,611 s/op
+                 testCounterQueue·p0.999:  0,611 s/op
+                 testCounterQueue·p0.9999: 0,611 s/op
+                 testCounterQueue·p1.00:   0,611 s/op
+
+Iteration   2: 0,509 ±(99.9%) 0,098 s/op
+                 testCounterQueue·p0.00:   0,346 s/op
+                 testCounterQueue·p0.50:   0,519 s/op
+                 testCounterQueue·p0.90:   0,685 s/op
+                 testCounterQueue·p0.95:   0,693 s/op
+                 testCounterQueue·p0.99:   0,693 s/op
+                 testCounterQueue·p0.999:  0,693 s/op
+                 testCounterQueue·p0.9999: 0,693 s/op
+                 testCounterQueue·p1.00:   0,693 s/op
+
+Iteration   3: 0,546 ±(99.9%) 0,120 s/op
+                 testCounterQueue·p0.00:   0,362 s/op
+                 testCounterQueue·p0.50:   0,575 s/op
+                 testCounterQueue·p0.90:   0,772 s/op
+                 testCounterQueue·p0.95:   0,784 s/op
+                 testCounterQueue·p0.99:   0,784 s/op
+                 testCounterQueue·p0.999:  0,784 s/op
+                 testCounterQueue·p0.9999: 0,784 s/op
+                 testCounterQueue·p1.00:   0,784 s/op
+
+Iteration   4: 0,535 ±(99.9%) 0,116 s/op
+                 testCounterQueue·p0.00:   0,356 s/op
+                 testCounterQueue·p0.50:   0,561 s/op
+                 testCounterQueue·p0.90:   0,717 s/op
+                 testCounterQueue·p0.95:   0,780 s/op
+                 testCounterQueue·p0.99:   0,780 s/op
+                 testCounterQueue·p0.999:  0,780 s/op
+                 testCounterQueue·p0.9999: 0,780 s/op
+                 testCounterQueue·p1.00:   0,780 s/op
+
+Iteration   5: 0,508 ±(99.9%) 0,093 s/op
+                 testCounterQueue·p0.00:   0,339 s/op
+                 testCounterQueue·p0.50:   0,545 s/op
+                 testCounterQueue·p0.90:   0,626 s/op
+                 testCounterQueue·p0.95:   0,682 s/op
+                 testCounterQueue·p0.99:   0,685 s/op
+                 testCounterQueue·p0.999:  0,685 s/op
+                 testCounterQueue·p0.9999: 0,685 s/op
+                 testCounterQueue·p1.00:   0,685 s/op
+
+Iteration   6: 0,513 ±(99.9%) 0,093 s/op
+                 testCounterQueue·p0.00:   0,342 s/op
+                 testCounterQueue·p0.50:   0,540 s/op
+                 testCounterQueue·p0.90:   0,628 s/op
+                 testCounterQueue·p0.95:   0,675 s/op
+                 testCounterQueue·p0.99:   0,677 s/op
+                 testCounterQueue·p0.999:  0,677 s/op
+                 testCounterQueue·p0.9999: 0,677 s/op
+                 testCounterQueue·p1.00:   0,677 s/op
+
+Iteration   7: 0,528 ±(99.9%) 0,100 s/op
+                 testCounterQueue·p0.00:   0,336 s/op
+                 testCounterQueue·p0.50:   0,575 s/op
+                 testCounterQueue·p0.90:   0,639 s/op
+                 testCounterQueue·p0.95:   0,661 s/op
+                 testCounterQueue·p0.99:   0,661 s/op
+                 testCounterQueue·p0.999:  0,661 s/op
+                 testCounterQueue·p0.9999: 0,661 s/op
+                 testCounterQueue·p1.00:   0,661 s/op
+
+Iteration   8: 0,528 ±(99.9%) 0,099 s/op
+                 testCounterQueue·p0.00:   0,352 s/op
+                 testCounterQueue·p0.50:   0,570 s/op
+                 testCounterQueue·p0.90:   0,654 s/op
+                 testCounterQueue·p0.95:   0,659 s/op
+                 testCounterQueue·p0.99:   0,660 s/op
+                 testCounterQueue·p0.999:  0,660 s/op
+                 testCounterQueue·p0.9999: 0,660 s/op
+                 testCounterQueue·p1.00:   0,660 s/op
+
+Iteration   9: 0,522 ±(99.9%) 0,105 s/op
+                 testCounterQueue·p0.00:   0,332 s/op
+                 testCounterQueue·p0.50:   0,555 s/op
+                 testCounterQueue·p0.90:   0,658 s/op
+                 testCounterQueue·p0.95:   0,733 s/op
+                 testCounterQueue·p0.99:   0,737 s/op
+                 testCounterQueue·p0.999:  0,737 s/op
+                 testCounterQueue·p0.9999: 0,737 s/op
+                 testCounterQueue·p1.00:   0,737 s/op
+
+Iteration  10: 0,532 ±(99.9%) 0,110 s/op
+                 testCounterQueue·p0.00:   0,330 s/op
+                 testCounterQueue·p0.50:   0,573 s/op
+                 testCounterQueue·p0.90:   0,657 s/op
+                 testCounterQueue·p0.95:   0,686 s/op
+                 testCounterQueue·p0.99:   0,686 s/op
+                 testCounterQueue·p0.999:  0,686 s/op
+                 testCounterQueue·p0.9999: 0,686 s/op
+                 testCounterQueue·p1.00:   0,686 s/op
+
+
+
+Result "mipt.bit.MyBenchmark.testCounterQueue":
+  N = 550
+  mean =      0,564 ±(99.9%) 0,019 s/op
+
+  Histogram, s/op:
+    [0,300, 0,350) = 25
+    [0,350, 0,400) = 81
+    [0,400, 0,450) = 27
+    [0,450, 0,500) = 28
+    [0,500, 0,550) = 52
+    [0,550, 0,600) = 102
+    [0,600, 0,650) = 88
+    [0,650, 0,700) = 67
+    [0,700, 0,750) = 41
+    [0,750, 0,800) = 25
+    [0,800, 0,850) = 12
+
+  Percentiles, s/op:
+      p(0,0000) =      0,325 s/op
+     p(50,0000) =      0,584 s/op
+     p(90,0000) =      0,736 s/op
+     p(95,0000) =      0,772 s/op
+     p(99,0000) =      0,825 s/op
+     p(99,9000) =      0,866 s/op
+     p(99,9900) =      0,866 s/op
+     p(99,9990) =      0,866 s/op
+     p(99,9999) =      0,866 s/op
+    p(100,0000) =      0,866 s/op
+
+
+# JMH version: 1.21
+# VM version: JDK 11.0.1, Java HotSpot(TM) 64-Bit Server VM, 11.0.1+13-LTS
+# VM invoker: C:\Program Files\Java\jdk-11.0.1\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.2\lib\idea_rt.jar=59429:C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.2\bin -Dfile.encoding=UTF-8
+# Warmup: 3 iterations, 10 s each
+# Measurement: 10 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: mipt.bit.MyBenchmark.testCounterSemaphore
+
+# Run progress: 88,89% complete, ETA 00:13:38
+# Fork: 1 of 3
+# Warmup Iteration   1: 0,486 ±(99.9%) 0,087 s/op
+# Warmup Iteration   2: 0,461 ±(99.9%) 0,083 s/op
+# Warmup Iteration   3: 0,505 ±(99.9%) 0,104 s/op
+Iteration   1: 0,489 ±(99.9%) 0,087 s/op
+                 testCounterSemaphore·p0.00:   0,309 s/op
+                 testCounterSemaphore·p0.50:   0,504 s/op
+                 testCounterSemaphore·p0.90:   0,639 s/op
+                 testCounterSemaphore·p0.95:   0,649 s/op
+                 testCounterSemaphore·p0.99:   0,649 s/op
+                 testCounterSemaphore·p0.999:  0,649 s/op
+                 testCounterSemaphore·p0.9999: 0,649 s/op
+                 testCounterSemaphore·p1.00:   0,649 s/op
+
+Iteration   2: 0,526 ±(99.9%) 0,097 s/op
+                 testCounterSemaphore·p0.00:   0,311 s/op
+                 testCounterSemaphore·p0.50:   0,565 s/op
+                 testCounterSemaphore·p0.90:   0,627 s/op
+                 testCounterSemaphore·p0.95:   0,661 s/op
+                 testCounterSemaphore·p0.99:   0,661 s/op
+                 testCounterSemaphore·p0.999:  0,661 s/op
+                 testCounterSemaphore·p0.9999: 0,661 s/op
+                 testCounterSemaphore·p1.00:   0,661 s/op
+
+Iteration   3: 0,507 ±(99.9%) 0,091 s/op
+                 testCounterSemaphore·p0.00:   0,318 s/op
+                 testCounterSemaphore·p0.50:   0,541 s/op
+                 testCounterSemaphore·p0.90:   0,619 s/op
+                 testCounterSemaphore·p0.95:   0,632 s/op
+                 testCounterSemaphore·p0.99:   0,632 s/op
+                 testCounterSemaphore·p0.999:  0,632 s/op
+                 testCounterSemaphore·p0.9999: 0,632 s/op
+                 testCounterSemaphore·p1.00:   0,632 s/op
+
+Iteration   4: 0,519 ±(99.9%) 0,094 s/op
+                 testCounterSemaphore·p0.00:   0,334 s/op
+                 testCounterSemaphore·p0.50:   0,544 s/op
+                 testCounterSemaphore·p0.90:   0,643 s/op
+                 testCounterSemaphore·p0.95:   0,665 s/op
+                 testCounterSemaphore·p0.99:   0,666 s/op
+                 testCounterSemaphore·p0.999:  0,666 s/op
+                 testCounterSemaphore·p0.9999: 0,666 s/op
+                 testCounterSemaphore·p1.00:   0,666 s/op
+
+Iteration   5: 0,500 ±(99.9%) 0,110 s/op
+                 testCounterSemaphore·p0.00:   0,267 s/op
+                 testCounterSemaphore·p0.50:   0,514 s/op
+                 testCounterSemaphore·p0.90:   0,648 s/op
+                 testCounterSemaphore·p0.95:   0,738 s/op
+                 testCounterSemaphore·p0.99:   0,742 s/op
+                 testCounterSemaphore·p0.999:  0,742 s/op
+                 testCounterSemaphore·p0.9999: 0,742 s/op
+                 testCounterSemaphore·p1.00:   0,742 s/op
+
+Iteration   6: 0,556 ±(99.9%) 0,114 s/op
+                 testCounterSemaphore·p0.00:   0,353 s/op
+                 testCounterSemaphore·p0.50:   0,592 s/op
+                 testCounterSemaphore·p0.90:   0,733 s/op
+                 testCounterSemaphore·p0.95:   0,739 s/op
+                 testCounterSemaphore·p0.99:   0,739 s/op
+                 testCounterSemaphore·p0.999:  0,739 s/op
+                 testCounterSemaphore·p0.9999: 0,739 s/op
+                 testCounterSemaphore·p1.00:   0,739 s/op
+
+Iteration   7: 0,554 ±(99.9%) 0,122 s/op
+                 testCounterSemaphore·p0.00:   0,285 s/op
+                 testCounterSemaphore·p0.50:   0,579 s/op
+                 testCounterSemaphore·p0.90:   0,716 s/op
+                 testCounterSemaphore·p0.95:   0,765 s/op
+                 testCounterSemaphore·p0.99:   0,765 s/op
+                 testCounterSemaphore·p0.999:  0,765 s/op
+                 testCounterSemaphore·p0.9999: 0,765 s/op
+                 testCounterSemaphore·p1.00:   0,765 s/op
+
+Iteration   8: 0,576 ±(99.9%) 0,118 s/op
+                 testCounterSemaphore·p0.00:   0,358 s/op
+                 testCounterSemaphore·p0.50:   0,569 s/op
+                 testCounterSemaphore·p0.90:   0,731 s/op
+                 testCounterSemaphore·p0.95:   0,794 s/op
+                 testCounterSemaphore·p0.99:   0,794 s/op
+                 testCounterSemaphore·p0.999:  0,794 s/op
+                 testCounterSemaphore·p0.9999: 0,794 s/op
+                 testCounterSemaphore·p1.00:   0,794 s/op
+
+Iteration   9: 0,521 ±(99.9%) 0,115 s/op
+                 testCounterSemaphore·p0.00:   0,306 s/op
+                 testCounterSemaphore·p0.50:   0,521 s/op
+                 testCounterSemaphore·p0.90:   0,678 s/op
+                 testCounterSemaphore·p0.95:   0,730 s/op
+                 testCounterSemaphore·p0.99:   0,733 s/op
+                 testCounterSemaphore·p0.999:  0,733 s/op
+                 testCounterSemaphore·p0.9999: 0,733 s/op
+                 testCounterSemaphore·p1.00:   0,733 s/op
+
+Iteration  10: 0,499 ±(99.9%) 0,090 s/op
+                 testCounterSemaphore·p0.00:   0,294 s/op
+                 testCounterSemaphore·p0.50:   0,514 s/op
+                 testCounterSemaphore·p0.90:   0,626 s/op
+                 testCounterSemaphore·p0.95:   0,658 s/op
+                 testCounterSemaphore·p0.99:   0,662 s/op
+                 testCounterSemaphore·p0.999:  0,662 s/op
+                 testCounterSemaphore·p0.9999: 0,662 s/op
+                 testCounterSemaphore·p1.00:   0,662 s/op
+
+
+# Run progress: 90,74% complete, ETA 00:11:21
+# Fork: 2 of 3
+# Warmup Iteration   1: 0,458 ±(99.9%) 0,086 s/op
+# Warmup Iteration   2: 0,461 ±(99.9%) 0,078 s/op
+# Warmup Iteration   3: 0,500 ±(99.9%) 0,089 s/op
+Iteration   1: 0,518 ±(99.9%) 0,096 s/op
+                 testCounterSemaphore·p0.00:   0,342 s/op
+                 testCounterSemaphore·p0.50:   0,558 s/op
+                 testCounterSemaphore·p0.90:   0,643 s/op
+                 testCounterSemaphore·p0.95:   0,662 s/op
+                 testCounterSemaphore·p0.99:   0,663 s/op
+                 testCounterSemaphore·p0.999:  0,663 s/op
+                 testCounterSemaphore·p0.9999: 0,663 s/op
+                 testCounterSemaphore·p1.00:   0,663 s/op
+
+Iteration   2: 0,509 ±(99.9%) 0,100 s/op
+                 testCounterSemaphore·p0.00:   0,307 s/op
+                 testCounterSemaphore·p0.50:   0,551 s/op
+                 testCounterSemaphore·p0.90:   0,637 s/op
+                 testCounterSemaphore·p0.95:   0,691 s/op
+                 testCounterSemaphore·p0.99:   0,694 s/op
+                 testCounterSemaphore·p0.999:  0,694 s/op
+                 testCounterSemaphore·p0.9999: 0,694 s/op
+                 testCounterSemaphore·p1.00:   0,694 s/op
+
+Iteration   3: 0,535 ±(99.9%) 0,116 s/op
+                 testCounterSemaphore·p0.00:   0,302 s/op
+                 testCounterSemaphore·p0.50:   0,558 s/op
+                 testCounterSemaphore·p0.90:   0,684 s/op
+                 testCounterSemaphore·p0.95:   0,706 s/op
+                 testCounterSemaphore·p0.99:   0,706 s/op
+                 testCounterSemaphore·p0.999:  0,706 s/op
+                 testCounterSemaphore·p0.9999: 0,706 s/op
+                 testCounterSemaphore·p1.00:   0,706 s/op
+
+Iteration   4: 0,525 ±(99.9%) 0,114 s/op
+                 testCounterSemaphore·p0.00:   0,301 s/op
+                 testCounterSemaphore·p0.50:   0,561 s/op
+                 testCounterSemaphore·p0.90:   0,664 s/op
+                 testCounterSemaphore·p0.95:   0,677 s/op
+                 testCounterSemaphore·p0.99:   0,677 s/op
+                 testCounterSemaphore·p0.999:  0,677 s/op
+                 testCounterSemaphore·p0.9999: 0,677 s/op
+                 testCounterSemaphore·p1.00:   0,677 s/op
+
+Iteration   5: 0,537 ±(99.9%) 0,127 s/op
+                 testCounterSemaphore·p0.00:   0,315 s/op
+                 testCounterSemaphore·p0.50:   0,574 s/op
+                 testCounterSemaphore·p0.90:   0,755 s/op
+                 testCounterSemaphore·p0.95:   0,772 s/op
+                 testCounterSemaphore·p0.99:   0,772 s/op
+                 testCounterSemaphore·p0.999:  0,772 s/op
+                 testCounterSemaphore·p0.9999: 0,772 s/op
+                 testCounterSemaphore·p1.00:   0,772 s/op
+
+Iteration   6: 0,494 ±(99.9%) 0,104 s/op
+                 testCounterSemaphore·p0.00:   0,309 s/op
+                 testCounterSemaphore·p0.50:   0,516 s/op
+                 testCounterSemaphore·p0.90:   0,645 s/op
+                 testCounterSemaphore·p0.95:   0,654 s/op
+                 testCounterSemaphore·p0.99:   0,654 s/op
+                 testCounterSemaphore·p0.999:  0,654 s/op
+                 testCounterSemaphore·p0.9999: 0,654 s/op
+                 testCounterSemaphore·p1.00:   0,654 s/op
+
+Iteration   7: 0,526 ±(99.9%) 0,100 s/op
+                 testCounterSemaphore·p0.00:   0,298 s/op
+                 testCounterSemaphore·p0.50:   0,551 s/op
+                 testCounterSemaphore·p0.90:   0,656 s/op
+                 testCounterSemaphore·p0.95:   0,677 s/op
+                 testCounterSemaphore·p0.99:   0,678 s/op
+                 testCounterSemaphore·p0.999:  0,678 s/op
+                 testCounterSemaphore·p0.9999: 0,678 s/op
+                 testCounterSemaphore·p1.00:   0,678 s/op
+
+Iteration   8: 0,611 ±(99.9%) 0,144 s/op
+                 testCounterSemaphore·p0.00:   0,379 s/op
+                 testCounterSemaphore·p0.50:   0,641 s/op
+                 testCounterSemaphore·p0.90:   0,807 s/op
+                 testCounterSemaphore·p0.95:   0,810 s/op
+                 testCounterSemaphore·p0.99:   0,810 s/op
+                 testCounterSemaphore·p0.999:  0,810 s/op
+                 testCounterSemaphore·p0.9999: 0,810 s/op
+                 testCounterSemaphore·p1.00:   0,810 s/op
+
+Iteration   9: 0,582 ±(99.9%) 0,112 s/op
+                 testCounterSemaphore·p0.00:   0,341 s/op
+                 testCounterSemaphore·p0.50:   0,599 s/op
+                 testCounterSemaphore·p0.90:   0,728 s/op
+                 testCounterSemaphore·p0.95:   0,742 s/op
+                 testCounterSemaphore·p0.99:   0,742 s/op
+                 testCounterSemaphore·p0.999:  0,742 s/op
+                 testCounterSemaphore·p0.9999: 0,742 s/op
+                 testCounterSemaphore·p1.00:   0,742 s/op
+
+Iteration  10: 0,628 ±(99.9%) 0,169 s/op
+                 testCounterSemaphore·p0.00:   0,342 s/op
+                 testCounterSemaphore·p0.50:   0,687 s/op
+                 testCounterSemaphore·p0.90:   0,816 s/op
+                 testCounterSemaphore·p0.95:   0,826 s/op
+                 testCounterSemaphore·p0.99:   0,826 s/op
+                 testCounterSemaphore·p0.999:  0,826 s/op
+                 testCounterSemaphore·p0.9999: 0,826 s/op
+                 testCounterSemaphore·p1.00:   0,826 s/op
+
+
+# Run progress: 92,59% complete, ETA 00:09:05
+# Fork: 3 of 3
+# Warmup Iteration   1: 0,503 ±(99.9%) 0,081 s/op
+# Warmup Iteration   2: 0,479 ±(99.9%) 0,088 s/op
+# Warmup Iteration   3: 0,526 ±(99.9%) 0,116 s/op
+Iteration   1: 0,518 ±(99.9%) 0,106 s/op
+                 testCounterSemaphore·p0.00:   0,321 s/op
+                 testCounterSemaphore·p0.50:   0,568 s/op
+                 testCounterSemaphore·p0.90:   0,639 s/op
+                 testCounterSemaphore·p0.95:   0,649 s/op
+                 testCounterSemaphore·p0.99:   0,649 s/op
+                 testCounterSemaphore·p0.999:  0,649 s/op
+                 testCounterSemaphore·p0.9999: 0,649 s/op
+                 testCounterSemaphore·p1.00:   0,649 s/op
+
+Iteration   2: 0,468 ±(99.9%) 0,089 s/op
+                 testCounterSemaphore·p0.00:   0,315 s/op
+                 testCounterSemaphore·p0.50:   0,487 s/op
+                 testCounterSemaphore·p0.90:   0,597 s/op
+                 testCounterSemaphore·p0.95:   0,715 s/op
+                 testCounterSemaphore·p0.99:   0,732 s/op
+                 testCounterSemaphore·p0.999:  0,732 s/op
+                 testCounterSemaphore·p0.9999: 0,732 s/op
+                 testCounterSemaphore·p1.00:   0,732 s/op
+
+Iteration   3: 0,461 ±(99.9%) 0,082 s/op
+                 testCounterSemaphore·p0.00:   0,311 s/op
+                 testCounterSemaphore·p0.50:   0,479 s/op
+                 testCounterSemaphore·p0.90:   0,605 s/op
+                 testCounterSemaphore·p0.95:   0,645 s/op
+                 testCounterSemaphore·p0.99:   0,649 s/op
+                 testCounterSemaphore·p0.999:  0,649 s/op
+                 testCounterSemaphore·p0.9999: 0,649 s/op
+                 testCounterSemaphore·p1.00:   0,649 s/op
+
+Iteration   4: 0,496 ±(99.9%) 0,107 s/op
+                 testCounterSemaphore·p0.00:   0,288 s/op
+                 testCounterSemaphore·p0.50:   0,503 s/op
+                 testCounterSemaphore·p0.90:   0,653 s/op
+                 testCounterSemaphore·p0.95:   0,770 s/op
+                 testCounterSemaphore·p0.99:   0,782 s/op
+                 testCounterSemaphore·p0.999:  0,782 s/op
+                 testCounterSemaphore·p0.9999: 0,782 s/op
+                 testCounterSemaphore·p1.00:   0,782 s/op
+
+Iteration   5: 0,524 ±(99.9%) 0,101 s/op
+                 testCounterSemaphore·p0.00:   0,312 s/op
+                 testCounterSemaphore·p0.50:   0,555 s/op
+                 testCounterSemaphore·p0.90:   0,663 s/op
+                 testCounterSemaphore·p0.95:   0,692 s/op
+                 testCounterSemaphore·p0.99:   0,693 s/op
+                 testCounterSemaphore·p0.999:  0,693 s/op
+                 testCounterSemaphore·p0.9999: 0,693 s/op
+                 testCounterSemaphore·p1.00:   0,693 s/op
+
+Iteration   6: 0,481 ±(99.9%) 0,095 s/op
+                 testCounterSemaphore·p0.00:   0,291 s/op
+                 testCounterSemaphore·p0.50:   0,500 s/op
+                 testCounterSemaphore·p0.90:   0,606 s/op
+                 testCounterSemaphore·p0.95:   0,677 s/op
+                 testCounterSemaphore·p0.99:   0,685 s/op
+                 testCounterSemaphore·p0.999:  0,685 s/op
+                 testCounterSemaphore·p0.9999: 0,685 s/op
+                 testCounterSemaphore·p1.00:   0,685 s/op
+
+Iteration   7: 0,486 ±(99.9%) 0,100 s/op
+                 testCounterSemaphore·p0.00:   0,296 s/op
+                 testCounterSemaphore·p0.50:   0,517 s/op
+                 testCounterSemaphore·p0.90:   0,657 s/op
+                 testCounterSemaphore·p0.95:   0,708 s/op
+                 testCounterSemaphore·p0.99:   0,713 s/op
+                 testCounterSemaphore·p0.999:  0,713 s/op
+                 testCounterSemaphore·p0.9999: 0,713 s/op
+                 testCounterSemaphore·p1.00:   0,713 s/op
+
+Iteration   8: 0,562 ±(99.9%) 0,135 s/op
+                 testCounterSemaphore·p0.00:   0,317 s/op
+                 testCounterSemaphore·p0.50:   0,593 s/op
+                 testCounterSemaphore·p0.90:   0,757 s/op
+                 testCounterSemaphore·p0.95:   0,763 s/op
+                 testCounterSemaphore·p0.99:   0,763 s/op
+                 testCounterSemaphore·p0.999:  0,763 s/op
+                 testCounterSemaphore·p0.9999: 0,763 s/op
+                 testCounterSemaphore·p1.00:   0,763 s/op
+
+Iteration   9: 0,597 ±(99.9%) 0,152 s/op
+                 testCounterSemaphore·p0.00:   0,320 s/op
+                 testCounterSemaphore·p0.50:   0,639 s/op
+                 testCounterSemaphore·p0.90:   0,773 s/op
+                 testCounterSemaphore·p0.95:   0,897 s/op
+                 testCounterSemaphore·p0.99:   0,897 s/op
+                 testCounterSemaphore·p0.999:  0,897 s/op
+                 testCounterSemaphore·p0.9999: 0,897 s/op
+                 testCounterSemaphore·p1.00:   0,897 s/op
+
+Iteration  10: 0,574 ±(99.9%) 0,142 s/op
+                 testCounterSemaphore·p0.00:   0,317 s/op
+                 testCounterSemaphore·p0.50:   0,610 s/op
+                 testCounterSemaphore·p0.90:   0,747 s/op
+                 testCounterSemaphore·p0.95:   0,829 s/op
+                 testCounterSemaphore·p0.99:   0,829 s/op
+                 testCounterSemaphore·p0.999:  0,829 s/op
+                 testCounterSemaphore·p0.9999: 0,829 s/op
+                 testCounterSemaphore·p1.00:   0,829 s/op
+
+
+
+Result "mipt.bit.MyBenchmark.testCounterSemaphore":
+  N = 587
+  mean =      0,526 ±(99.9%) 0,017 s/op
+
+  Histogram, s/op:
+    [0,200, 0,250) = 0
+    [0,250, 0,300) = 9
+    [0,300, 0,350) = 73
+    [0,350, 0,400) = 52
+    [0,400, 0,450) = 32
+    [0,450, 0,500) = 43
+    [0,500, 0,550) = 99
+    [0,550, 0,600) = 97
+    [0,600, 0,650) = 84
+    [0,650, 0,700) = 60
+    [0,700, 0,750) = 22
+    [0,750, 0,800) = 8
+    [0,800, 0,850) = 7
+
+  Percentiles, s/op:
+      p(0,0000) =      0,267 s/op
+     p(50,0000) =      0,541 s/op
+     p(90,0000) =      0,679 s/op
+     p(95,0000) =      0,715 s/op
+     p(99,0000) =      0,810 s/op
+     p(99,9000) =      0,897 s/op
+     p(99,9900) =      0,897 s/op
+     p(99,9990) =      0,897 s/op
+     p(99,9999) =      0,897 s/op
+    p(100,0000) =      0,897 s/op
+
+
+# JMH version: 1.21
+# VM version: JDK 11.0.1, Java HotSpot(TM) 64-Bit Server VM, 11.0.1+13-LTS
+# VM invoker: C:\Program Files\Java\jdk-11.0.1\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.2\lib\idea_rt.jar=59429:C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.2\bin -Dfile.encoding=UTF-8
+# Warmup: 3 iterations, 10 s each
+# Measurement: 10 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: mipt.bit.MyBenchmark.testCounterSynchronized
+
+# Run progress: 94,44% complete, ETA 00:06:49
+# Fork: 1 of 3
+# Warmup Iteration   1: 0,421 ±(99.9%) 0,066 s/op
+# Warmup Iteration   2: 0,419 ±(99.9%) 0,066 s/op
+# Warmup Iteration   3: 0,481 ±(99.9%) 0,106 s/op
+Iteration   1: 0,461 ±(99.9%) 0,070 s/op
+                 testCounterSynchronized·p0.00:   0,296 s/op
+                 testCounterSynchronized·p0.50:   0,493 s/op
+                 testCounterSynchronized·p0.90:   0,540 s/op
+                 testCounterSynchronized·p0.95:   0,573 s/op
+                 testCounterSynchronized·p0.99:   0,579 s/op
+                 testCounterSynchronized·p0.999:  0,579 s/op
+                 testCounterSynchronized·p0.9999: 0,579 s/op
+                 testCounterSynchronized·p1.00:   0,579 s/op
+
+Iteration   2: 0,444 ±(99.9%) 0,079 s/op
+                 testCounterSynchronized·p0.00:   0,267 s/op
+                 testCounterSynchronized·p0.50:   0,476 s/op
+                 testCounterSynchronized·p0.90:   0,549 s/op
+                 testCounterSynchronized·p0.95:   0,578 s/op
+                 testCounterSynchronized·p0.99:   0,585 s/op
+                 testCounterSynchronized·p0.999:  0,585 s/op
+                 testCounterSynchronized·p0.9999: 0,585 s/op
+                 testCounterSynchronized·p1.00:   0,585 s/op
+
+Iteration   3: 0,450 ±(99.9%) 0,082 s/op
+                 testCounterSynchronized·p0.00:   0,287 s/op
+                 testCounterSynchronized·p0.50:   0,497 s/op
+                 testCounterSynchronized·p0.90:   0,570 s/op
+                 testCounterSynchronized·p0.95:   0,590 s/op
+                 testCounterSynchronized·p0.99:   0,591 s/op
+                 testCounterSynchronized·p0.999:  0,591 s/op
+                 testCounterSynchronized·p0.9999: 0,591 s/op
+                 testCounterSynchronized·p1.00:   0,591 s/op
+
+Iteration   4: 0,446 ±(99.9%) 0,087 s/op
+                 testCounterSynchronized·p0.00:   0,269 s/op
+                 testCounterSynchronized·p0.50:   0,485 s/op
+                 testCounterSynchronized·p0.90:   0,567 s/op
+                 testCounterSynchronized·p0.95:   0,590 s/op
+                 testCounterSynchronized·p0.99:   0,590 s/op
+                 testCounterSynchronized·p0.999:  0,590 s/op
+                 testCounterSynchronized·p0.9999: 0,590 s/op
+                 testCounterSynchronized·p1.00:   0,590 s/op
+
+Iteration   5: 0,489 ±(99.9%) 0,099 s/op
+                 testCounterSynchronized·p0.00:   0,261 s/op
+                 testCounterSynchronized·p0.50:   0,528 s/op
+                 testCounterSynchronized·p0.90:   0,605 s/op
+                 testCounterSynchronized·p0.95:   0,679 s/op
+                 testCounterSynchronized·p0.99:   0,687 s/op
+                 testCounterSynchronized·p0.999:  0,687 s/op
+                 testCounterSynchronized·p0.9999: 0,687 s/op
+                 testCounterSynchronized·p1.00:   0,687 s/op
+
+Iteration   6: 0,497 ±(99.9%) 0,103 s/op
+                 testCounterSynchronized·p0.00:   0,284 s/op
+                 testCounterSynchronized·p0.50:   0,549 s/op
+                 testCounterSynchronized·p0.90:   0,630 s/op
+                 testCounterSynchronized·p0.95:   0,645 s/op
+                 testCounterSynchronized·p0.99:   0,646 s/op
+                 testCounterSynchronized·p0.999:  0,646 s/op
+                 testCounterSynchronized·p0.9999: 0,646 s/op
+                 testCounterSynchronized·p1.00:   0,646 s/op
+
+Iteration   7: 0,500 ±(99.9%) 0,100 s/op
+                 testCounterSynchronized·p0.00:   0,301 s/op
+                 testCounterSynchronized·p0.50:   0,519 s/op
+                 testCounterSynchronized·p0.90:   0,660 s/op
+                 testCounterSynchronized·p0.95:   0,688 s/op
+                 testCounterSynchronized·p0.99:   0,689 s/op
+                 testCounterSynchronized·p0.999:  0,689 s/op
+                 testCounterSynchronized·p0.9999: 0,689 s/op
+                 testCounterSynchronized·p1.00:   0,689 s/op
+
+Iteration   8: 0,483 ±(99.9%) 0,095 s/op
+                 testCounterSynchronized·p0.00:   0,300 s/op
+                 testCounterSynchronized·p0.50:   0,490 s/op
+                 testCounterSynchronized·p0.90:   0,618 s/op
+                 testCounterSynchronized·p0.95:   0,646 s/op
+                 testCounterSynchronized·p0.99:   0,649 s/op
+                 testCounterSynchronized·p0.999:  0,649 s/op
+                 testCounterSynchronized·p0.9999: 0,649 s/op
+                 testCounterSynchronized·p1.00:   0,649 s/op
+
+Iteration   9: 0,557 ±(99.9%) 0,149 s/op
+                 testCounterSynchronized·p0.00:   0,268 s/op
+                 testCounterSynchronized·p0.50:   0,612 s/op
+                 testCounterSynchronized·p0.90:   0,728 s/op
+                 testCounterSynchronized·p0.95:   0,772 s/op
+                 testCounterSynchronized·p0.99:   0,772 s/op
+                 testCounterSynchronized·p0.999:  0,772 s/op
+                 testCounterSynchronized·p0.9999: 0,772 s/op
+                 testCounterSynchronized·p1.00:   0,772 s/op
+
+Iteration  10: 0,557 ±(99.9%) 0,111 s/op
+                 testCounterSynchronized·p0.00:   0,301 s/op
+                 testCounterSynchronized·p0.50:   0,595 s/op
+                 testCounterSynchronized·p0.90:   0,663 s/op
+                 testCounterSynchronized·p0.95:   0,731 s/op
+                 testCounterSynchronized·p0.99:   0,731 s/op
+                 testCounterSynchronized·p0.999:  0,731 s/op
+                 testCounterSynchronized·p0.9999: 0,731 s/op
+                 testCounterSynchronized·p1.00:   0,731 s/op
+
+
+# Run progress: 96,29% complete, ETA 00:04:32
+# Fork: 2 of 3
+# Warmup Iteration   1: 0,430 ±(99.9%) 0,062 s/op
+# Warmup Iteration   2: 0,409 ±(99.9%) 0,066 s/op
+# Warmup Iteration   3: 0,452 ±(99.9%) 0,081 s/op
+Iteration   1: 0,445 ±(99.9%) 0,082 s/op
+                 testCounterSynchronized·p0.00:   0,281 s/op
+                 testCounterSynchronized·p0.50:   0,467 s/op
+                 testCounterSynchronized·p0.90:   0,574 s/op
+                 testCounterSynchronized·p0.95:   0,637 s/op
+                 testCounterSynchronized·p0.99:   0,648 s/op
+                 testCounterSynchronized·p0.999:  0,648 s/op
+                 testCounterSynchronized·p0.9999: 0,648 s/op
+                 testCounterSynchronized·p1.00:   0,648 s/op
+
+Iteration   2: 0,454 ±(99.9%) 0,078 s/op
+                 testCounterSynchronized·p0.00:   0,278 s/op
+                 testCounterSynchronized·p0.50:   0,493 s/op
+                 testCounterSynchronized·p0.90:   0,549 s/op
+                 testCounterSynchronized·p0.95:   0,566 s/op
+                 testCounterSynchronized·p0.99:   0,568 s/op
+                 testCounterSynchronized·p0.999:  0,568 s/op
+                 testCounterSynchronized·p0.9999: 0,568 s/op
+                 testCounterSynchronized·p1.00:   0,568 s/op
+
+Iteration   3: 0,459 ±(99.9%) 0,092 s/op
+                 testCounterSynchronized·p0.00:   0,282 s/op
+                 testCounterSynchronized·p0.50:   0,493 s/op
+                 testCounterSynchronized·p0.90:   0,577 s/op
+                 testCounterSynchronized·p0.95:   0,661 s/op
+                 testCounterSynchronized·p0.99:   0,675 s/op
+                 testCounterSynchronized·p0.999:  0,675 s/op
+                 testCounterSynchronized·p0.9999: 0,675 s/op
+                 testCounterSynchronized·p1.00:   0,675 s/op
+
+Iteration   4: 0,462 ±(99.9%) 0,091 s/op
+                 testCounterSynchronized·p0.00:   0,258 s/op
+                 testCounterSynchronized·p0.50:   0,503 s/op
+                 testCounterSynchronized·p0.90:   0,570 s/op
+                 testCounterSynchronized·p0.95:   0,624 s/op
+                 testCounterSynchronized·p0.99:   0,632 s/op
+                 testCounterSynchronized·p0.999:  0,632 s/op
+                 testCounterSynchronized·p0.9999: 0,632 s/op
+                 testCounterSynchronized·p1.00:   0,632 s/op
+
+Iteration   5: 0,481 ±(99.9%) 0,106 s/op
+                 testCounterSynchronized·p0.00:   0,272 s/op
+                 testCounterSynchronized·p0.50:   0,507 s/op
+                 testCounterSynchronized·p0.90:   0,613 s/op
+                 testCounterSynchronized·p0.95:   0,766 s/op
+                 testCounterSynchronized·p0.99:   0,782 s/op
+                 testCounterSynchronized·p0.999:  0,782 s/op
+                 testCounterSynchronized·p0.9999: 0,782 s/op
+                 testCounterSynchronized·p1.00:   0,782 s/op
+
+Iteration   6: 0,467 ±(99.9%) 0,097 s/op
+                 testCounterSynchronized·p0.00:   0,262 s/op
+                 testCounterSynchronized·p0.50:   0,508 s/op
+                 testCounterSynchronized·p0.90:   0,607 s/op
+                 testCounterSynchronized·p0.95:   0,620 s/op
+                 testCounterSynchronized·p0.99:   0,622 s/op
+                 testCounterSynchronized·p0.999:  0,622 s/op
+                 testCounterSynchronized·p0.9999: 0,622 s/op
+                 testCounterSynchronized·p1.00:   0,622 s/op
+
+Iteration   7: 0,523 ±(99.9%) 0,097 s/op
+                 testCounterSynchronized·p0.00:   0,304 s/op
+                 testCounterSynchronized·p0.50:   0,545 s/op
+                 testCounterSynchronized·p0.90:   0,636 s/op
+                 testCounterSynchronized·p0.95:   0,638 s/op
+                 testCounterSynchronized·p0.99:   0,639 s/op
+                 testCounterSynchronized·p0.999:  0,639 s/op
+                 testCounterSynchronized·p0.9999: 0,639 s/op
+                 testCounterSynchronized·p1.00:   0,639 s/op
+
+Iteration   8: 0,527 ±(99.9%) 0,132 s/op
+                 testCounterSynchronized·p0.00:   0,279 s/op
+                 testCounterSynchronized·p0.50:   0,569 s/op
+                 testCounterSynchronized·p0.90:   0,687 s/op
+                 testCounterSynchronized·p0.95:   0,783 s/op
+                 testCounterSynchronized·p0.99:   0,789 s/op
+                 testCounterSynchronized·p0.999:  0,789 s/op
+                 testCounterSynchronized·p0.9999: 0,789 s/op
+                 testCounterSynchronized·p1.00:   0,789 s/op
+
+Iteration   9: 0,559 ±(99.9%) 0,120 s/op
+                 testCounterSynchronized·p0.00:   0,318 s/op
+                 testCounterSynchronized·p0.50:   0,595 s/op
+                 testCounterSynchronized·p0.90:   0,720 s/op
+                 testCounterSynchronized·p0.95:   0,725 s/op
+                 testCounterSynchronized·p0.99:   0,725 s/op
+                 testCounterSynchronized·p0.999:  0,725 s/op
+                 testCounterSynchronized·p0.9999: 0,725 s/op
+                 testCounterSynchronized·p1.00:   0,725 s/op
+
+Iteration  10: 0,530 ±(99.9%) 0,122 s/op
+                 testCounterSynchronized·p0.00:   0,225 s/op
+                 testCounterSynchronized·p0.50:   0,540 s/op
+                 testCounterSynchronized·p0.90:   0,655 s/op
+                 testCounterSynchronized·p0.95:   0,735 s/op
+                 testCounterSynchronized·p0.99:   0,735 s/op
+                 testCounterSynchronized·p0.999:  0,735 s/op
+                 testCounterSynchronized·p0.9999: 0,735 s/op
+                 testCounterSynchronized·p1.00:   0,735 s/op
+
+
+# Run progress: 98,14% complete, ETA 00:02:16
+# Fork: 3 of 3
+# Warmup Iteration   1: 0,430 ±(99.9%) 0,057 s/op
+# Warmup Iteration   2: 0,405 ±(99.9%) 0,066 s/op
+# Warmup Iteration   3: 0,429 ±(99.9%) 0,072 s/op
+Iteration   1: 0,426 ±(99.9%) 0,071 s/op
+                 testCounterSynchronized·p0.00:   0,291 s/op
+                 testCounterSynchronized·p0.50:   0,452 s/op
+                 testCounterSynchronized·p0.90:   0,533 s/op
+                 testCounterSynchronized·p0.95:   0,584 s/op
+                 testCounterSynchronized·p0.99:   0,600 s/op
+                 testCounterSynchronized·p0.999:  0,600 s/op
+                 testCounterSynchronized·p0.9999: 0,600 s/op
+                 testCounterSynchronized·p1.00:   0,600 s/op
+
+Iteration   2: 0,469 ±(99.9%) 0,082 s/op
+                 testCounterSynchronized·p0.00:   0,299 s/op
+                 testCounterSynchronized·p0.50:   0,492 s/op
+                 testCounterSynchronized·p0.90:   0,586 s/op
+                 testCounterSynchronized·p0.95:   0,641 s/op
+                 testCounterSynchronized·p0.99:   0,650 s/op
+                 testCounterSynchronized·p0.999:  0,650 s/op
+                 testCounterSynchronized·p0.9999: 0,650 s/op
+                 testCounterSynchronized·p1.00:   0,650 s/op
+
+Iteration   3: 0,435 ±(99.9%) 0,081 s/op
+                 testCounterSynchronized·p0.00:   0,274 s/op
+                 testCounterSynchronized·p0.50:   0,471 s/op
+                 testCounterSynchronized·p0.90:   0,554 s/op
+                 testCounterSynchronized·p0.95:   0,571 s/op
+                 testCounterSynchronized·p0.99:   0,576 s/op
+                 testCounterSynchronized·p0.999:  0,576 s/op
+                 testCounterSynchronized·p0.9999: 0,576 s/op
+                 testCounterSynchronized·p1.00:   0,576 s/op
+
+Iteration   4: 0,440 ±(99.9%) 0,079 s/op
+                 testCounterSynchronized·p0.00:   0,266 s/op
+                 testCounterSynchronized·p0.50:   0,463 s/op
+                 testCounterSynchronized·p0.90:   0,567 s/op
+                 testCounterSynchronized·p0.95:   0,576 s/op
+                 testCounterSynchronized·p0.99:   0,577 s/op
+                 testCounterSynchronized·p0.999:  0,577 s/op
+                 testCounterSynchronized·p0.9999: 0,577 s/op
+                 testCounterSynchronized·p1.00:   0,577 s/op
+
+Iteration   5: 0,470 ±(99.9%) 0,087 s/op
+                 testCounterSynchronized·p0.00:   0,282 s/op
+                 testCounterSynchronized·p0.50:   0,489 s/op
+                 testCounterSynchronized·p0.90:   0,591 s/op
+                 testCounterSynchronized·p0.95:   0,616 s/op
+                 testCounterSynchronized·p0.99:   0,620 s/op
+                 testCounterSynchronized·p0.999:  0,620 s/op
+                 testCounterSynchronized·p0.9999: 0,620 s/op
+                 testCounterSynchronized·p1.00:   0,620 s/op
+
+Iteration   6: 0,457 ±(99.9%) 0,109 s/op
+                 testCounterSynchronized·p0.00:   0,188 s/op
+                 testCounterSynchronized·p0.50:   0,514 s/op
+                 testCounterSynchronized·p0.90:   0,593 s/op
+                 testCounterSynchronized·p0.95:   0,606 s/op
+                 testCounterSynchronized·p0.99:   0,608 s/op
+                 testCounterSynchronized·p0.999:  0,608 s/op
+                 testCounterSynchronized·p0.9999: 0,608 s/op
+                 testCounterSynchronized·p1.00:   0,608 s/op
+
+Iteration   7: 0,540 ±(99.9%) 0,107 s/op
+                 testCounterSynchronized·p0.00:   0,326 s/op
+                 testCounterSynchronized·p0.50:   0,556 s/op
+                 testCounterSynchronized·p0.90:   0,670 s/op
+                 testCounterSynchronized·p0.95:   0,714 s/op
+                 testCounterSynchronized·p0.99:   0,714 s/op
+                 testCounterSynchronized·p0.999:  0,714 s/op
+                 testCounterSynchronized·p0.9999: 0,714 s/op
+                 testCounterSynchronized·p1.00:   0,714 s/op
+
+Iteration   8: 0,511 ±(99.9%) 0,113 s/op
+                 testCounterSynchronized·p0.00:   0,303 s/op
+                 testCounterSynchronized·p0.50:   0,557 s/op
+                 testCounterSynchronized·p0.90:   0,629 s/op
+                 testCounterSynchronized·p0.95:   0,676 s/op
+                 testCounterSynchronized·p0.99:   0,678 s/op
+                 testCounterSynchronized·p0.999:  0,678 s/op
+                 testCounterSynchronized·p0.9999: 0,678 s/op
+                 testCounterSynchronized·p1.00:   0,678 s/op
+
+Iteration   9: 0,579 ±(99.9%) 0,112 s/op
+                 testCounterSynchronized·p0.00:   0,335 s/op
+                 testCounterSynchronized·p0.50:   0,609 s/op
+                 testCounterSynchronized·p0.90:   0,713 s/op
+                 testCounterSynchronized·p0.95:   0,754 s/op
+                 testCounterSynchronized·p0.99:   0,754 s/op
+                 testCounterSynchronized·p0.999:  0,754 s/op
+                 testCounterSynchronized·p0.9999: 0,754 s/op
+                 testCounterSynchronized·p1.00:   0,754 s/op
+
+Iteration  10: 0,599 ±(99.9%) 0,148 s/op
+                 testCounterSynchronized·p0.00:   0,291 s/op
+                 testCounterSynchronized·p0.50:   0,649 s/op
+                 testCounterSynchronized·p0.90:   0,798 s/op
+                 testCounterSynchronized·p0.95:   0,828 s/op
+                 testCounterSynchronized·p0.99:   0,828 s/op
+                 testCounterSynchronized·p0.999:  0,828 s/op
+                 testCounterSynchronized·p0.9999: 0,828 s/op
+                 testCounterSynchronized·p1.00:   0,828 s/op
+
+
+
+Result "mipt.bit.MyBenchmark.testCounterSynchronized":
+  N = 633
+  mean =      0,487 ±(99.9%) 0,016 s/op
+
+  Histogram, s/op:
+    [0,100, 0,150) = 0
+    [0,150, 0,200) = 1
+    [0,200, 0,250) = 2
+    [0,250, 0,300) = 58
+    [0,300, 0,350) = 82
+    [0,350, 0,400) = 26
+    [0,400, 0,450) = 25
+    [0,450, 0,500) = 103
+    [0,500, 0,550) = 142
+    [0,550, 0,600) = 90
+    [0,600, 0,650) = 55
+    [0,650, 0,700) = 33
+    [0,700, 0,750) = 10
+    [0,750, 0,800) = 5
+    [0,800, 0,850) = 1
+
+  Percentiles, s/op:
+      p(0,0000) =      0,188 s/op
+     p(50,0000) =      0,510 s/op
+     p(90,0000) =      0,635 s/op
+     p(95,0000) =      0,668 s/op
+     p(99,0000) =      0,748 s/op
+     p(99,9000) =      0,828 s/op
+     p(99,9900) =      0,828 s/op
+     p(99,9990) =      0,828 s/op
+     p(99,9999) =      0,828 s/op
+    p(100,0000) =      0,828 s/op
+
+
+# JMH version: 1.21
+# VM version: JDK 11.0.1, Java HotSpot(TM) 64-Bit Server VM, 11.0.1+13-LTS
+# VM invoker: C:\Program Files\Java\jdk-11.0.1\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.2\lib\idea_rt.jar=59429:C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.2\bin -Dfile.encoding=UTF-8
+# Warmup: 3 iterations, single-shot each
+# Measurement: 10 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: mipt.bit.MyBenchmark.testCounterAtomicLong
+
+# Run progress: 100,00% complete, ETA 00:00:00
+# Fork: 1 of 3
+# Warmup Iteration   1: 0,557 s/op
+# Warmup Iteration   2: 0,356 s/op
+# Warmup Iteration   3: 0,453 s/op
+Iteration   1: 0,536 s/op
+Iteration   2: 0,375 s/op
+Iteration   3: 0,406 s/op
+Iteration   4: 0,455 s/op
+Iteration   5: 0,367 s/op
+Iteration   6: 0,460 s/op
+Iteration   7: 0,415 s/op
+Iteration   8: 0,451 s/op
+Iteration   9: 0,411 s/op
+Iteration  10: 0,453 s/op
+
+# Run progress: 100,00% complete, ETA 00:00:00
+# Fork: 2 of 3
+# Warmup Iteration   1: 0,654 s/op
+# Warmup Iteration   2: 0,396 s/op
+# Warmup Iteration   3: 0,368 s/op
+Iteration   1: 0,467 s/op
+Iteration   2: 0,577 s/op
+Iteration   3: 0,395 s/op
+Iteration   4: 0,369 s/op
+Iteration   5: 0,459 s/op
+Iteration   6: 0,446 s/op
+Iteration   7: 0,496 s/op
+Iteration   8: 0,390 s/op
+Iteration   9: 0,293 s/op
+Iteration  10: 0,426 s/op
+
+# Run progress: 100,00% complete, ETA 00:00:00
+# Fork: 3 of 3
+# Warmup Iteration   1: 0,565 s/op
+# Warmup Iteration   2: 0,376 s/op
+# Warmup Iteration   3: 0,486 s/op
+Iteration   1: 0,366 s/op
+Iteration   2: 0,419 s/op
+Iteration   3: 0,434 s/op
+Iteration   4: 0,404 s/op
+Iteration   5: 0,402 s/op
+Iteration   6: 0,469 s/op
+Iteration   7: 0,431 s/op
+Iteration   8: 0,443 s/op
+Iteration   9: 0,404 s/op
+Iteration  10: 0,301 s/op
+
+
+Result "mipt.bit.MyBenchmark.testCounterAtomicLong":
+  N = 30
+  mean =      0,424 ±(99.9%) 0,039 s/op
+
+  Histogram, s/op:
+    [0,200, 0,225) = 0
+    [0,225, 0,250) = 0
+    [0,250, 0,275) = 0
+    [0,275, 0,300) = 1
+    [0,300, 0,325) = 1
+    [0,325, 0,350) = 0
+    [0,350, 0,375) = 4
+    [0,375, 0,400) = 2
+    [0,400, 0,425) = 7
+    [0,425, 0,450) = 5
+    [0,450, 0,475) = 7
+    [0,475, 0,500) = 1
+    [0,500, 0,525) = 0
+    [0,525, 0,550) = 1
+    [0,550, 0,575) = 0
+    [0,575, 0,600) = 1
+
+  Percentiles, s/op:
+      p(0,0000) =      0,293 s/op
+     p(50,0000) =      0,423 s/op
+     p(90,0000) =      0,493 s/op
+     p(95,0000) =      0,555 s/op
+     p(99,0000) =      0,577 s/op
+     p(99,9000) =      0,577 s/op
+     p(99,9900) =      0,577 s/op
+     p(99,9990) =      0,577 s/op
+     p(99,9999) =      0,577 s/op
+    p(100,0000) =      0,577 s/op
+
+
+# JMH version: 1.21
+# VM version: JDK 11.0.1, Java HotSpot(TM) 64-Bit Server VM, 11.0.1+13-LTS
+# VM invoker: C:\Program Files\Java\jdk-11.0.1\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.2\lib\idea_rt.jar=59429:C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.2\bin -Dfile.encoding=UTF-8
+# Warmup: 3 iterations, single-shot each
+# Measurement: 10 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: mipt.bit.MyBenchmark.testCounterBakery
+
+# Run progress: 100,00% complete, ETA 00:00:00
+# Fork: 1 of 3
+# Warmup Iteration   1: 2,003 s/op
+# Warmup Iteration   2: 1,733 s/op
+# Warmup Iteration   3: 2,022 s/op
+Iteration   1: 2,090 s/op
+Iteration   2: 2,285 s/op
+Iteration   3: 2,012 s/op
+Iteration   4: 1,763 s/op
+Iteration   5: 1,680 s/op
+Iteration   6: 1,547 s/op
+Iteration   7: 1,596 s/op
+Iteration   8: 1,804 s/op
+Iteration   9: 1,663 s/op
+Iteration  10: 2,074 s/op
+
+# Run progress: 100,00% complete, ETA 00:00:00
+# Fork: 2 of 3
+# Warmup Iteration   1: 3,418 s/op
+# Warmup Iteration   2: 2,709 s/op
+# Warmup Iteration   3: 2,507 s/op
+Iteration   1: 2,126 s/op
+Iteration   2: 2,470 s/op
+Iteration   3: 2,473 s/op
+Iteration   4: 2,331 s/op
+Iteration   5: 2,198 s/op
+Iteration   6: 2,389 s/op
+Iteration   7: 1,790 s/op
+Iteration   8: 1,600 s/op
+Iteration   9: 1,534 s/op
+Iteration  10: 2,402 s/op
+
+# Run progress: 100,00% complete, ETA 00:00:00
+# Fork: 3 of 3
+# Warmup Iteration   1: 2,614 s/op
+# Warmup Iteration   2: 1,906 s/op
+# Warmup Iteration   3: 1,809 s/op
+Iteration   1: 1,763 s/op
+Iteration   2: 1,628 s/op
+Iteration   3: 1,473 s/op
+Iteration   4: 1,471 s/op
+Iteration   5: 1,370 s/op
+Iteration   6: 1,437 s/op
+Iteration   7: 1,528 s/op
+Iteration   8: 1,473 s/op
+Iteration   9: 2,231 s/op
+Iteration  10: 1,465 s/op
+
+
+Result "mipt.bit.MyBenchmark.testCounterBakery":
+  N = 30
+  mean =      1,856 ±(99.9%) 0,242 s/op
+
+  Histogram, s/op:
+    [1,000, 1,125) = 0
+    [1,125, 1,250) = 0
+    [1,250, 1,375) = 1
+    [1,375, 1,500) = 5
+    [1,500, 1,625) = 5
+    [1,625, 1,750) = 3
+    [1,750, 1,875) = 4
+    [1,875, 2,000) = 0
+    [2,000, 2,125) = 3
+    [2,125, 2,250) = 3
+    [2,250, 2,375) = 2
+    [2,375, 2,500) = 4
+    [2,500, 2,625) = 0
+    [2,625, 2,750) = 0
+    [2,750, 2,875) = 0
+
+  Percentiles, s/op:
+      p(0,0000) =      1,370 s/op
+     p(50,0000) =      1,763 s/op
+     p(90,0000) =      2,401 s/op
+     p(95,0000) =      2,472 s/op
+     p(99,0000) =      2,473 s/op
+     p(99,9000) =      2,473 s/op
+     p(99,9900) =      2,473 s/op
+     p(99,9990) =      2,473 s/op
+     p(99,9999) =      2,473 s/op
+    p(100,0000) =      2,473 s/op
+
+
+# JMH version: 1.21
+# VM version: JDK 11.0.1, Java HotSpot(TM) 64-Bit Server VM, 11.0.1+13-LTS
+# VM invoker: C:\Program Files\Java\jdk-11.0.1\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.2\lib\idea_rt.jar=59429:C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.2\bin -Dfile.encoding=UTF-8
+# Warmup: 3 iterations, single-shot each
+# Measurement: 10 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: mipt.bit.MyBenchmark.testCounterLock
+
+# Run progress: 100,00% complete, ETA 00:00:00
+# Fork: 1 of 3
+# Warmup Iteration   1: 0,619 s/op
+# Warmup Iteration   2: 0,535 s/op
+# Warmup Iteration   3: 0,506 s/op
+Iteration   1: 0,411 s/op
+Iteration   2: 0,429 s/op
+Iteration   3: 0,402 s/op
+Iteration   4: 0,453 s/op
+Iteration   5: 0,420 s/op
+Iteration   6: 0,510 s/op
+Iteration   7: 0,459 s/op
+Iteration   8: 0,525 s/op
+Iteration   9: 0,441 s/op
+Iteration  10: 0,347 s/op
+
+# Run progress: 100,00% complete, ETA 00:00:00
+# Fork: 2 of 3
+# Warmup Iteration   1: 0,688 s/op
+# Warmup Iteration   2: 0,440 s/op
+# Warmup Iteration   3: 0,546 s/op
+Iteration   1: 0,378 s/op
+Iteration   2: 0,417 s/op
+Iteration   3: 0,449 s/op
+Iteration   4: 0,431 s/op
+Iteration   5: 0,482 s/op
+Iteration   6: 0,499 s/op
+Iteration   7: 0,504 s/op
+Iteration   8: 0,569 s/op
+Iteration   9: 0,462 s/op
+Iteration  10: 0,333 s/op
+
+# Run progress: 100,00% complete, ETA 00:00:00
+# Fork: 3 of 3
+# Warmup Iteration   1: 0,639 s/op
+# Warmup Iteration   2: 0,446 s/op
+# Warmup Iteration   3: 0,508 s/op
+Iteration   1: 0,400 s/op
+Iteration   2: 0,389 s/op
+Iteration   3: 0,663 s/op
+Iteration   4: 0,453 s/op
+Iteration   5: 0,515 s/op
+Iteration   6: 0,503 s/op
+Iteration   7: 0,335 s/op
+Iteration   8: 0,444 s/op
+Iteration   9: 0,480 s/op
+Iteration  10: 0,562 s/op
+
+
+Result "mipt.bit.MyBenchmark.testCounterLock":
+  N = 30
+  mean =      0,455 ±(99.9%) 0,048 s/op
+
+  Histogram, s/op:
+    [0,300, 0,325) = 0
+    [0,325, 0,350) = 3
+    [0,350, 0,375) = 0
+    [0,375, 0,400) = 3
+    [0,400, 0,425) = 4
+    [0,425, 0,450) = 5
+    [0,450, 0,475) = 4
+    [0,475, 0,500) = 3
+    [0,500, 0,525) = 4
+    [0,525, 0,550) = 1
+    [0,550, 0,575) = 2
+    [0,575, 0,600) = 0
+    [0,600, 0,625) = 0
+    [0,625, 0,650) = 0
+    [0,650, 0,675) = 1
+
+  Percentiles, s/op:
+      p(0,0000) =      0,333 s/op
+     p(50,0000) =      0,451 s/op
+     p(90,0000) =      0,558 s/op
+     p(95,0000) =      0,611 s/op
+     p(99,0000) =      0,663 s/op
+     p(99,9000) =      0,663 s/op
+     p(99,9900) =      0,663 s/op
+     p(99,9990) =      0,663 s/op
+     p(99,9999) =      0,663 s/op
+    p(100,0000) =      0,663 s/op
+
+
+# JMH version: 1.21
+# VM version: JDK 11.0.1, Java HotSpot(TM) 64-Bit Server VM, 11.0.1+13-LTS
+# VM invoker: C:\Program Files\Java\jdk-11.0.1\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.2\lib\idea_rt.jar=59429:C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.2\bin -Dfile.encoding=UTF-8
+# Warmup: 3 iterations, single-shot each
+# Measurement: 10 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: mipt.bit.MyBenchmark.testCounterQueue
+
+# Run progress: 100,00% complete, ETA 00:00:00
+# Fork: 1 of 3
+# Warmup Iteration   1: 0,954 s/op
+# Warmup Iteration   2: 0,653 s/op
+# Warmup Iteration   3: 0,601 s/op
+Iteration   1: 0,489 s/op
+Iteration   2: 0,593 s/op
+Iteration   3: 0,564 s/op
+Iteration   4: 0,514 s/op
+Iteration   5: 0,539 s/op
+Iteration   6: 0,622 s/op
+Iteration   7: 0,504 s/op
+Iteration   8: 0,564 s/op
+Iteration   9: 0,610 s/op
+Iteration  10: 0,359 s/op
+
+# Run progress: 100,00% complete, ETA 00:00:00
+# Fork: 2 of 3
+# Warmup Iteration   1: 0,785 s/op
+# Warmup Iteration   2: 0,584 s/op
+# Warmup Iteration   3: 0,622 s/op
+Iteration   1: 0,547 s/op
+Iteration   2: 0,465 s/op
+Iteration   3: 0,550 s/op
+Iteration   4: 0,455 s/op
+Iteration   5: 0,485 s/op
+Iteration   6: 0,493 s/op
+Iteration   7: 0,579 s/op
+Iteration   8: 0,553 s/op
+Iteration   9: 0,535 s/op
+Iteration  10: 0,508 s/op
+
+# Run progress: 100,00% complete, ETA 00:00:00
+# Fork: 3 of 3
+# Warmup Iteration   1: 0,830 s/op
+# Warmup Iteration   2: 0,600 s/op
+# Warmup Iteration   3: 0,619 s/op
+Iteration   1: 0,445 s/op
+Iteration   2: 0,532 s/op
+Iteration   3: 0,535 s/op
+Iteration   4: 0,526 s/op
+Iteration   5: 0,507 s/op
+Iteration   6: 0,506 s/op
+Iteration   7: 0,592 s/op
+Iteration   8: 0,645 s/op
+Iteration   9: 0,604 s/op
+Iteration  10: 0,396 s/op
+
+
+Result "mipt.bit.MyBenchmark.testCounterQueue":
+  N = 30
+  mean =      0,527 ±(99.9%) 0,043 s/op
+
+  Histogram, s/op:
+    [0,300, 0,325) = 0
+    [0,325, 0,350) = 0
+    [0,350, 0,375) = 1
+    [0,375, 0,400) = 1
+    [0,400, 0,425) = 0
+    [0,425, 0,450) = 1
+    [0,450, 0,475) = 2
+    [0,475, 0,500) = 3
+    [0,500, 0,525) = 5
+    [0,525, 0,550) = 7
+    [0,550, 0,575) = 3
+    [0,575, 0,600) = 3
+    [0,600, 0,625) = 3
+    [0,625, 0,650) = 1
+    [0,650, 0,675) = 0
+
+  Percentiles, s/op:
+      p(0,0000) =      0,359 s/op
+     p(50,0000) =      0,534 s/op
+     p(90,0000) =      0,609 s/op
+     p(95,0000) =      0,633 s/op
+     p(99,0000) =      0,645 s/op
+     p(99,9000) =      0,645 s/op
+     p(99,9900) =      0,645 s/op
+     p(99,9990) =      0,645 s/op
+     p(99,9999) =      0,645 s/op
+    p(100,0000) =      0,645 s/op
+
+
+# JMH version: 1.21
+# VM version: JDK 11.0.1, Java HotSpot(TM) 64-Bit Server VM, 11.0.1+13-LTS
+# VM invoker: C:\Program Files\Java\jdk-11.0.1\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.2\lib\idea_rt.jar=59429:C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.2\bin -Dfile.encoding=UTF-8
+# Warmup: 3 iterations, single-shot each
+# Measurement: 10 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: mipt.bit.MyBenchmark.testCounterSemaphore
+
+# Run progress: 100,00% complete, ETA 00:00:00
+# Fork: 1 of 3
+# Warmup Iteration   1: 0,646 s/op
+# Warmup Iteration   2: 0,462 s/op
+# Warmup Iteration   3: 0,562 s/op
+Iteration   1: 0,436 s/op
+Iteration   2: 0,427 s/op
+Iteration   3: 0,606 s/op
+Iteration   4: 0,416 s/op
+Iteration   5: 0,576 s/op
+Iteration   6: 0,455 s/op
+Iteration   7: 0,587 s/op
+Iteration   8: 0,447 s/op
+Iteration   9: 0,568 s/op
+Iteration  10: 0,367 s/op
+
+# Run progress: 100,00% complete, ETA 00:00:00
+# Fork: 2 of 3
+# Warmup Iteration   1: 0,971 s/op
+# Warmup Iteration   2: 0,456 s/op
+# Warmup Iteration   3: 0,498 s/op
+Iteration   1: 0,570 s/op
+Iteration   2: 0,702 s/op
+Iteration   3: 0,445 s/op
+Iteration   4: 0,544 s/op
+Iteration   5: 0,558 s/op
+Iteration   6: 0,610 s/op
+Iteration   7: 0,362 s/op
+Iteration   8: 0,507 s/op
+Iteration   9: 0,521 s/op
+Iteration  10: 0,525 s/op
+
+# Run progress: 100,00% complete, ETA 00:00:00
+# Fork: 3 of 3
+# Warmup Iteration   1: 0,644 s/op
+# Warmup Iteration   2: 0,434 s/op
+# Warmup Iteration   3: 0,487 s/op
+Iteration   1: 0,484 s/op
+Iteration   2: 0,449 s/op
+Iteration   3: 0,488 s/op
+Iteration   4: 0,435 s/op
+Iteration   5: 0,476 s/op
+Iteration   6: 0,447 s/op
+Iteration   7: 0,510 s/op
+Iteration   8: 0,504 s/op
+Iteration   9: 0,457 s/op
+Iteration  10: 0,565 s/op
+
+
+Result "mipt.bit.MyBenchmark.testCounterSemaphore":
+  N = 30
+  mean =      0,501 ±(99.9%) 0,051 s/op
+
+  Histogram, s/op:
+    [0,300, 0,350) = 0
+    [0,350, 0,400) = 2
+    [0,400, 0,450) = 8
+    [0,450, 0,500) = 5
+    [0,500, 0,550) = 6
+    [0,550, 0,600) = 6
+    [0,600, 0,650) = 2
+    [0,650, 0,700) = 0
+    [0,700, 0,750) = 1
+
+  Percentiles, s/op:
+      p(0,0000) =      0,362 s/op
+     p(50,0000) =      0,496 s/op
+     p(90,0000) =      0,604 s/op
+     p(95,0000) =      0,651 s/op
+     p(99,0000) =      0,702 s/op
+     p(99,9000) =      0,702 s/op
+     p(99,9900) =      0,702 s/op
+     p(99,9990) =      0,702 s/op
+     p(99,9999) =      0,702 s/op
+    p(100,0000) =      0,702 s/op
+
+
+# JMH version: 1.21
+# VM version: JDK 11.0.1, Java HotSpot(TM) 64-Bit Server VM, 11.0.1+13-LTS
+# VM invoker: C:\Program Files\Java\jdk-11.0.1\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.2\lib\idea_rt.jar=59429:C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.2\bin -Dfile.encoding=UTF-8
+# Warmup: 3 iterations, single-shot each
+# Measurement: 10 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: mipt.bit.MyBenchmark.testCounterSynchronized
+
+# Run progress: 100,00% complete, ETA 00:00:00
+# Fork: 1 of 3
+# Warmup Iteration   1: 0,711 s/op
+# Warmup Iteration   2: 0,426 s/op
+# Warmup Iteration   3: 0,418 s/op
+Iteration   1: 0,434 s/op
+Iteration   2: 0,408 s/op
+Iteration   3: 0,407 s/op
+Iteration   4: 0,424 s/op
+Iteration   5: 0,403 s/op
+Iteration   6: 0,454 s/op
+Iteration   7: 0,464 s/op
+Iteration   8: 0,455 s/op
+Iteration   9: 0,293 s/op
+Iteration  10: 0,400 s/op
+
+# Run progress: 100,00% complete, ETA 00:00:00
+# Fork: 2 of 3
+# Warmup Iteration   1: 0,634 s/op
+# Warmup Iteration   2: 0,381 s/op
+# Warmup Iteration   3: 0,457 s/op
+Iteration   1: 0,334 s/op
+Iteration   2: 0,452 s/op
+Iteration   3: 0,424 s/op
+Iteration   4: 0,408 s/op
+Iteration   5: 0,484 s/op
+Iteration   6: 0,434 s/op
+Iteration   7: 0,296 s/op
+Iteration   8: 0,505 s/op
+Iteration   9: 0,554 s/op
+Iteration  10: 0,445 s/op
+
+# Run progress: 100,00% complete, ETA 00:00:00
+# Fork: 3 of 3
+# Warmup Iteration   1: 0,588 s/op
+# Warmup Iteration   2: 0,430 s/op
+# Warmup Iteration   3: 0,434 s/op
+Iteration   1: 0,356 s/op
+Iteration   2: 0,438 s/op
+Iteration   3: 0,406 s/op
+Iteration   4: 0,431 s/op
+Iteration   5: 0,383 s/op
+Iteration   6: 0,416 s/op
+Iteration   7: 0,480 s/op
+Iteration   8: 0,471 s/op
+Iteration   9: 0,392 s/op
+Iteration  10: 0,462 s/op
+
+
+Result "mipt.bit.MyBenchmark.testCounterSynchronized":
+  N = 30
+  mean =      0,424 ±(99.9%) 0,037 s/op
+
+  Histogram, s/op:
+    [0,200, 0,225) = 0
+    [0,225, 0,250) = 0
+    [0,250, 0,275) = 0
+    [0,275, 0,300) = 2
+    [0,300, 0,325) = 0
+    [0,325, 0,350) = 1
+    [0,350, 0,375) = 1
+    [0,375, 0,400) = 2
+    [0,400, 0,425) = 9
+    [0,425, 0,450) = 5
+    [0,450, 0,475) = 6
+    [0,475, 0,500) = 2
+    [0,500, 0,525) = 1
+    [0,525, 0,550) = 0
+    [0,550, 0,575) = 1
+    [0,575, 0,600) = 0
+
+  Percentiles, s/op:
+      p(0,0000) =      0,293 s/op
+     p(50,0000) =      0,428 s/op
+     p(90,0000) =      0,484 s/op
+     p(95,0000) =      0,527 s/op
+     p(99,0000) =      0,554 s/op
+     p(99,9000) =      0,554 s/op
+     p(99,9900) =      0,554 s/op
+     p(99,9990) =      0,554 s/op
+     p(99,9999) =      0,554 s/op
+    p(100,0000) =      0,554 s/op
+
+
+# Run complete. Total time: 02:05:44
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                                                              Mode  Cnt  Score   Error  Units
+MyBenchmark.testCounterAtomicLong                                     thrpt   30  2,155 ± 0,133  ops/s
+MyBenchmark.testCounterBakery                                         thrpt   30  0,656 ± 0,019  ops/s
+MyBenchmark.testCounterLock                                           thrpt   30  1,969 ± 0,089  ops/s
+MyBenchmark.testCounterQueue                                          thrpt   30  1,785 ± 0,067  ops/s
+MyBenchmark.testCounterSemaphore                                      thrpt   30  1,980 ± 0,131  ops/s
+MyBenchmark.testCounterSynchronized                                   thrpt   30  2,170 ± 0,100  ops/s
+MyBenchmark.testCounterAtomicLong                                      avgt   30  0,452 ± 0,027   s/op
+MyBenchmark.testCounterBakery                                          avgt   30  1,599 ± 0,051   s/op
+MyBenchmark.testCounterLock                                            avgt   30  0,522 ± 0,018   s/op
+MyBenchmark.testCounterQueue                                           avgt   30  0,565 ± 0,017   s/op
+MyBenchmark.testCounterSemaphore                                       avgt   30  0,522 ± 0,031   s/op
+MyBenchmark.testCounterSynchronized                                    avgt   30  0,445 ± 0,020   s/op
+MyBenchmark.testCounterAtomicLong                                    sample  685  0,448 ± 0,014   s/op
+MyBenchmark.testCounterAtomicLong:testCounterAtomicLong·p0.00        sample       0,238           s/op
+MyBenchmark.testCounterAtomicLong:testCounterAtomicLong·p0.50        sample       0,472           s/op
+MyBenchmark.testCounterAtomicLong:testCounterAtomicLong·p0.90        sample       0,579           s/op
+MyBenchmark.testCounterAtomicLong:testCounterAtomicLong·p0.95        sample       0,623           s/op
+MyBenchmark.testCounterAtomicLong:testCounterAtomicLong·p0.99        sample       0,693           s/op
+MyBenchmark.testCounterAtomicLong:testCounterAtomicLong·p0.999       sample       0,866           s/op
+MyBenchmark.testCounterAtomicLong:testCounterAtomicLong·p0.9999      sample       0,866           s/op
+MyBenchmark.testCounterAtomicLong:testCounterAtomicLong·p1.00        sample       0,866           s/op
+MyBenchmark.testCounterBakery                                        sample  200  1,622 ± 0,063   s/op
+MyBenchmark.testCounterBakery:testCounterBakery·p0.00                sample       1,158           s/op
+MyBenchmark.testCounterBakery:testCounterBakery·p0.50                sample       1,593           s/op
+MyBenchmark.testCounterBakery:testCounterBakery·p0.90                sample       1,984           s/op
+MyBenchmark.testCounterBakery:testCounterBakery·p0.95                sample       2,076           s/op
+MyBenchmark.testCounterBakery:testCounterBakery·p0.99                sample       2,510           s/op
+MyBenchmark.testCounterBakery:testCounterBakery·p0.999               sample       2,617           s/op
+MyBenchmark.testCounterBakery:testCounterBakery·p0.9999              sample       2,617           s/op
+MyBenchmark.testCounterBakery:testCounterBakery·p1.00                sample       2,617           s/op
+MyBenchmark.testCounterLock                                          sample  599  0,513 ± 0,017   s/op
+MyBenchmark.testCounterLock:testCounterLock·p0.00                    sample       0,249           s/op
+MyBenchmark.testCounterLock:testCounterLock·p0.50                    sample       0,534           s/op
+MyBenchmark.testCounterLock:testCounterLock·p0.90                    sample       0,664           s/op
+MyBenchmark.testCounterLock:testCounterLock·p0.95                    sample       0,710           s/op
+MyBenchmark.testCounterLock:testCounterLock·p0.99                    sample       0,796           s/op
+MyBenchmark.testCounterLock:testCounterLock·p0.999                   sample       0,870           s/op
+MyBenchmark.testCounterLock:testCounterLock·p0.9999                  sample       0,870           s/op
+MyBenchmark.testCounterLock:testCounterLock·p1.00                    sample       0,870           s/op
+MyBenchmark.testCounterQueue                                         sample  550  0,564 ± 0,019   s/op
+MyBenchmark.testCounterQueue:testCounterQueue·p0.00                  sample       0,325           s/op
+MyBenchmark.testCounterQueue:testCounterQueue·p0.50                  sample       0,584           s/op
+MyBenchmark.testCounterQueue:testCounterQueue·p0.90                  sample       0,736           s/op
+MyBenchmark.testCounterQueue:testCounterQueue·p0.95                  sample       0,772           s/op
+MyBenchmark.testCounterQueue:testCounterQueue·p0.99                  sample       0,825           s/op
+MyBenchmark.testCounterQueue:testCounterQueue·p0.999                 sample       0,866           s/op
+MyBenchmark.testCounterQueue:testCounterQueue·p0.9999                sample       0,866           s/op
+MyBenchmark.testCounterQueue:testCounterQueue·p1.00                  sample       0,866           s/op
+MyBenchmark.testCounterSemaphore                                     sample  587  0,526 ± 0,017   s/op
+MyBenchmark.testCounterSemaphore:testCounterSemaphore·p0.00          sample       0,267           s/op
+MyBenchmark.testCounterSemaphore:testCounterSemaphore·p0.50          sample       0,541           s/op
+MyBenchmark.testCounterSemaphore:testCounterSemaphore·p0.90          sample       0,679           s/op
+MyBenchmark.testCounterSemaphore:testCounterSemaphore·p0.95          sample       0,715           s/op
+MyBenchmark.testCounterSemaphore:testCounterSemaphore·p0.99          sample       0,810           s/op
+MyBenchmark.testCounterSemaphore:testCounterSemaphore·p0.999         sample       0,897           s/op
+MyBenchmark.testCounterSemaphore:testCounterSemaphore·p0.9999        sample       0,897           s/op
+MyBenchmark.testCounterSemaphore:testCounterSemaphore·p1.00          sample       0,897           s/op
+MyBenchmark.testCounterSynchronized                                  sample  633  0,487 ± 0,016   s/op
+MyBenchmark.testCounterSynchronized:testCounterSynchronized·p0.00    sample       0,188           s/op
+MyBenchmark.testCounterSynchronized:testCounterSynchronized·p0.50    sample       0,510           s/op
+MyBenchmark.testCounterSynchronized:testCounterSynchronized·p0.90    sample       0,635           s/op
+MyBenchmark.testCounterSynchronized:testCounterSynchronized·p0.95    sample       0,668           s/op
+MyBenchmark.testCounterSynchronized:testCounterSynchronized·p0.99    sample       0,748           s/op
+MyBenchmark.testCounterSynchronized:testCounterSynchronized·p0.999   sample       0,828           s/op
+MyBenchmark.testCounterSynchronized:testCounterSynchronized·p0.9999  sample       0,828           s/op
+MyBenchmark.testCounterSynchronized:testCounterSynchronized·p1.00    sample       0,828           s/op
+MyBenchmark.testCounterAtomicLong                                        ss   30  0,424 ± 0,039   s/op
+MyBenchmark.testCounterBakery                                            ss   30  1,856 ± 0,242   s/op
+MyBenchmark.testCounterLock                                              ss   30  0,455 ± 0,048   s/op
+MyBenchmark.testCounterQueue                                             ss   30  0,527 ± 0,043   s/op
+MyBenchmark.testCounterSemaphore                                         ss   30  0,501 ± 0,051   s/op
+MyBenchmark.testCounterSynchronized                                      ss   30  0,424 ± 0,037   s/op
+
+Process finished with exit code 0

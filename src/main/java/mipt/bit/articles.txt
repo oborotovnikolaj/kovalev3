@@ -1,0 +1,5 @@
+http://www.javaspecialist.ru/2011/11/synchronized-vs-reentrantlock.html
+http://www.javaspecialist.ru/2011/04/java.html
+https://habr.com/ru/post/187854/
+https://habr.com/ru/post/319036/
+https://habr.com/ru/post/196548/
