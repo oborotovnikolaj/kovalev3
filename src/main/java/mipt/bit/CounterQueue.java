@@ -9,7 +9,7 @@ public class CounterQueue implements Counter {
     BlockingQueue<String> queue = new PriorityBlockingQueue<>(Collections.singletonList("work"));
     private long value;
     @Override
-    public synchronized void increment() {
+    public void increment() {
         try {
             String take = queue.take();
 

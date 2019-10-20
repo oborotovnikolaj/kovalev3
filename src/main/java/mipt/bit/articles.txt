@@ -1,5 +1,196 @@
+
+Исследование работы разных счетчиков
+
+Автор - Оборотов Николай
+Сожержание
+1)Описание
+2)Параметры теста
+3)Результаты
+4)Анализ
+5)Synchronized (Fat, Thin, Biased)
+6)ReentrantLock
+7)Сравнение Synchronized и ReentrantLock
+8)CAS - Compare-and-Swap
+9)Источники
+
+
+1)Описание
+В данной работе иследовалось неколько видов счетчиков
+    CounterSynchronized - синхронизация на методе
+    CounterQueue - использует PriorityBlockingQueue ( которая в свою очередь использует ReentrantLock)
+    CounterSemaphore - использет CounterSemaphore Semaphore(1)
+    CounterAtomicLong - использует AtomicLong
+    CounterLock - использует ReentrantLock
+    CounterBakery - не исплользует никаких синхронизация
+
+2)Параметры теста
+Тесты запускались со следуюими параметрами
+            @Fork(value = 3)
+            @Warmup(iterations = 3)
+            @Measurement(iterations = 10)
+            @GroupThreads(1)
+В ходе каждого такого теста созвавался пул из 4 потоков. Единичной задачой потока было увелечение счетчика на единичку
+Всего было 1000000 таких задач.
+
+3)Результаты
+Были получены следующие результаты
+Benchmark                                                              Mode  Cnt  Score   Error  Units
+
+MyBenchmark.testCounterAtomicLong                                     thrpt   30  2,183 ± 0,142  ops/s
+MyBenchmark.testCounterBakery                                         thrpt   30  0,668 ± 0,044  ops/s
+MyBenchmark.testCounterLock                                           thrpt   30  1,931 ± 0,067  ops/s
+MyBenchmark.testCounterQueue                                          thrpt   30  1,169 ± 0,051  ops/s
+MyBenchmark.testCounterSemaphore                                      thrpt   30  1,791 ± 0,096  ops/s
+MyBenchmark.testCounterSynchronized                                   thrpt   30  2,120 ± 0,089  ops/s
+
+MyBenchmark.testCounterAtomicLong                                      avgt   30  0,464 ± 0,022   s/op
+MyBenchmark.testCounterBakery                                          avgt   20  1,425 ± 0,068   s/op
+MyBenchmark.testCounterLock                                            avgt   30  0,503 ± 0,017   s/op
+MyBenchmark.testCounterQueue                                           avgt   30  0,859 ± 0,033   s/op
+MyBenchmark.testCounterSemaphore                                       avgt   30  0,574 ± 0,041   s/op
+MyBenchmark.testCounterSynchronized                                    avgt   30  0,475 ± 0,025   s/op
+
+MyBenchmark.testCounterAtomicLong                                    sample  635  0,485 ± 0,017   s/op
+MyBenchmark.testCounterAtomicLong:testCounterAtomicLong·p0.00        sample       0,250           s/op
+MyBenchmark.testCounterAtomicLong:testCounterAtomicLong·p0.50        sample       0,508           s/op
+MyBenchmark.testCounterAtomicLong:testCounterAtomicLong·p0.90        sample       0,642           s/op
+MyBenchmark.testCounterAtomicLong:testCounterAtomicLong·p0.95        sample       0,692           s/op
+MyBenchmark.testCounterAtomicLong:testCounterAtomicLong·p0.99        sample       0,755           s/op
+MyBenchmark.testCounterAtomicLong:testCounterAtomicLong·p0.999       sample       0,787           s/op
+MyBenchmark.testCounterAtomicLong:testCounterAtomicLong·p0.9999      sample       0,787           s/op
+MyBenchmark.testCounterAtomicLong:testCounterAtomicLong·p1.00        sample       0,787           s/op
+
+MyBenchmark.testCounterBakery                                        sample  220  1,476 ± 0,060   s/op
+MyBenchmark.testCounterBakery:testCounterBakery·p0.00                sample       1,097           s/op
+MyBenchmark.testCounterBakery:testCounterBakery·p0.50                sample       1,424           s/op
+MyBenchmark.testCounterBakery:testCounterBakery·p0.90                sample       1,820           s/op
+MyBenchmark.testCounterBakery:testCounterBakery·p0.95                sample       1,974           s/op
+MyBenchmark.testCounterBakery:testCounterBakery·p0.99                sample       2,249           s/op
+MyBenchmark.testCounterBakery:testCounterBakery·p0.999               sample       2,273           s/op
+MyBenchmark.testCounterBakery:testCounterBakery·p0.9999              sample       2,273           s/op
+MyBenchmark.testCounterBakery:testCounterBakery·p1.00                sample       2,273           s/op
+
+MyBenchmark.testCounterLock                                          sample  584  0,526 ± 0,016   s/op
+MyBenchmark.testCounterLock:testCounterLock·p0.00                    sample       0,227           s/op
+MyBenchmark.testCounterLock:testCounterLock·p0.50                    sample       0,556           s/op
+MyBenchmark.testCounterLock:testCounterLock·p0.90                    sample       0,663           s/op
+MyBenchmark.testCounterLock:testCounterLock·p0.95                    sample       0,692           s/op
+MyBenchmark.testCounterLock:testCounterLock·p0.99                    sample       0,760           s/op
+MyBenchmark.testCounterLock:testCounterLock·p0.999                   sample       0,803           s/op
+MyBenchmark.testCounterLock:testCounterLock·p0.9999                  sample       0,803           s/op
+MyBenchmark.testCounterLock:testCounterLock·p1.00                    sample       0,803           s/op
+
+MyBenchmark.testCounterQueue                                         sample  396  0,791 ± 0,030   s/op
+MyBenchmark.testCounterQueue:testCounterQueue·p0.00                  sample       0,384           s/op
+MyBenchmark.testCounterQueue:testCounterQueue·p0.50                  sample       0,800           s/op
+MyBenchmark.testCounterQueue:testCounterQueue·p0.90                  sample       1,007           s/op
+MyBenchmark.testCounterQueue:testCounterQueue·p0.95                  sample       1,066           s/op
+MyBenchmark.testCounterQueue:testCounterQueue·p0.99                  sample       1,156           s/op
+MyBenchmark.testCounterQueue:testCounterQueue·p0.999                 sample       1,581           s/op
+MyBenchmark.testCounterQueue:testCounterQueue·p0.9999                sample       1,581           s/op
+MyBenchmark.testCounterQueue:testCounterQueue·p1.00                  sample       1,581           s/op
+
+MyBenchmark.testCounterSemaphore                                     sample  576  0,535 ± 0,018   s/op
+MyBenchmark.testCounterSemaphore:testCounterSemaphore·p0.00          sample       0,264           s/op
+MyBenchmark.testCounterSemaphore:testCounterSemaphore·p0.50          sample       0,556           s/op
+MyBenchmark.testCounterSemaphore:testCounterSemaphore·p0.90          sample       0,694           s/op
+MyBenchmark.testCounterSemaphore:testCounterSemaphore·p0.95          sample       0,725           s/op
+MyBenchmark.testCounterSemaphore:testCounterSemaphore·p0.99          sample       0,785           s/op
+MyBenchmark.testCounterSemaphore:testCounterSemaphore·p0.999         sample       0,892           s/op
+MyBenchmark.testCounterSemaphore:testCounterSemaphore·p0.9999        sample       0,892           s/op
+MyBenchmark.testCounterSemaphore:testCounterSemaphore·p1.00          sample       0,892           s/op
+
+MyBenchmark.testCounterSynchronized                                  sample  656  0,472 ± 0,019   s/op
+MyBenchmark.testCounterSynchronized:testCounterSynchronized·p0.00    sample       0,247           s/op
+MyBenchmark.testCounterSynchronized:testCounterSynchronized·p0.50    sample       0,497           s/op
+MyBenchmark.testCounterSynchronized:testCounterSynchronized·p0.90    sample       0,583           s/op
+MyBenchmark.testCounterSynchronized:testCounterSynchronized·p0.95    sample       0,627           s/op
+MyBenchmark.testCounterSynchronized:testCounterSynchronized·p0.99    sample       1,017           s/op
+MyBenchmark.testCounterSynchronized:testCounterSynchronized·p0.999   sample       1,919           s/op
+MyBenchmark.testCounterSynchronized:testCounterSynchronized·p0.9999  sample       1,919           s/op
+MyBenchmark.testCounterSynchronized:testCounterSynchronized·p1.00    sample       1,919           s/op
+
+MyBenchmark.testCounterAtomicLong                                        ss   30  0,415 ± 0,049   s/op
+MyBenchmark.testCounterBakery                                            ss   30  1,804 ± 0,165   s/op
+MyBenchmark.testCounterLock                                              ss   30  0,482 ± 0,041   s/op
+MyBenchmark.testCounterQueue                                             ss   30  0,775 ± 0,053   s/op
+MyBenchmark.testCounterSemaphore                                         ss   30  0,488 ± 0,056   s/op
+MyBenchmark.testCounterSynchronized                                      ss   30  0,420 ± 0,039   s/op
+
+
+4)Анализ
+И так по среднему времени CounterAtomicLong, CounterSynchronized, CounterLock - показали самые быстрые и почти равные
+(с учетом погрешностей) результаты. Хотя CounterSynchronized и CounterLock имеет довольно различню реализацию.
+
+Далее с небольшим отставанием идут CounterSemaphore и CounterQueue, что логично, так как внутри себя они использует
+те же методы, что и первые три счетчика
+
+Самым медленным оказался CounterBakery, потому что не использует никаих оптимизаций
+
+5)Synchronized
+На данный момент есть три различных видов блокировок: biаsed, thin и fat.Применяются они по умолчанию в следующем
+порядке Biased, Thin, Fat(inflated lock)
+1. Fat блокировка
+Самый очевидный и простой вариант, основанный на использовании мютекса операционной системы. Применим в любых условиях,
+включая случай состязательные блокировок в нескольких потоках.
+
+2. Thin блокировка
+Если же состязательной блокировки практически нет, то можно придумать кое-что побыстрее мьютекса, так как будить в этом
+случае потоки не нужно и можно обойтись без скедульера операционной системы. Так были придуманы thin блокировки
+использующие CAS операции для гарантирования эксклюзивного доступа.
+
+3. Biased блокировки
+На некоторых архитектурах, особенно очень многопроцессорных, CAS операции не очень-то дешевы, поэтому для случая работы
+с объектом в одного потоке были придуманы biased блокировки, которые не требуют никаких CAS операций. На самом
+требуется одна CAS операция для выставления типа блокировки при первой попытке её захвата.
+
+Переходы между состояниями весьма затарты
+
+6)ReentrantLock.
+Здесь все проще в том плане, что он всегда работает одинаково: сначала пытается сделать CAS, пользуясь стандартными
+средствами Java, и если удастся, то захватывает блокировку и выполняется дальше, если же CAS не работает, то вызов
+идет в ОС и поток паркуется (дизейблиться для скедулинга OС). Т.е. получаем, что в отличие от synchronized при не
+конкурирующих потоках, ReentrantLock будет всегда делать CAS, чтобы зайти в критическую секцию и не важно заходит ли
+туда один поток или много. При наличие конкуренции, потоки, которым повезло с CAS избегут переключения контекста и
+сразу пойдут на выполнение, другим же придется парковаться.
+
+
+7)Сравнение Synchronized и ReentrantLock
+Исходя из всего вышесказанного, можно вывести следующую очень приближенную инструкцию:
+
+1. Если вы уверены, что с вашим кодом всегда работает только один поток, но есть очень маленькая вероятность, что
+туда придет другой поток и он должен увидеть все в консистентном состоянии. Либо же долгое время работает один поток,
+потом долгое время другой и так далее, то можно попробовать отдать предпочтение synchronized, так как в этом случае
+поток практически вообще не будет замечать, что происходит синхронизация.
+
+2. Если вы знаете, что с вашим кодом работает много потоков, но конкуренции практически нет, то скорее всего оба
+подхода дадут практически одинаковый результат, так как и в том и другом случае потоку достаточно будет выполнить
+один CAS для входа в критическую секцию. Хотя стоит заметить, что для выхода из критической секции в случае
+synchronized потоку так же надо будет выполнить CAS, а в случае с ReentrantLock потоку надо будет выполнить
+volatile write. Так что кто из них выиграет по производительности может зависеть в том числе от железа, вернее в
+отношении стоимости операций CAS и мембаров.
+
+3. Если же у вас заведомо сильный contention или же он бывает наплывами, тогда здесь скорее всего выиграет
+ReentrantLock, так как время от времени потоки смогут захватывать лок с помощью CAS, а в случае с synchronized при
+первом сильном состязании монитор надуется (inflated), и потоку всегда придется обращаться к ОС для доступа к
+критической секции, что скорее всего будет затратнее, ведь вероятность перейти обратно на lightweigh, в силу
+существующей, реализации довольно мала.
+
+Если еще проще, то когда состязания за блокировку нет либо оно очень мало, то, возможно, synchronized будет быстрее.
+Ежели есть заметное состязание, то скорее всего ReentrantLock даст некое преимущество.
+
+8)CAS - Compare-and-Swap
+Операция CAS включает 3 объекта-операнда: адрес ячейки памяти (V), ожидаемое старое значение (A) и новое значение (B).
+Процессор атомарно обновляет адрес ячейки (V), если значение в ячейке памяти совпадает со старым ожидаемым значением(A)
+, иначе изменения не зафиксируется. Самый простое объяснение -
+«Наверное,  значение по адресу V равняется A; если так оно и есть, поместите туда же B, в противном случае не
+делайте этого, но обязательно скажите мне, какая величина — текущая.»
+
+9)Источники
 http://www.javaspecialist.ru/2011/11/synchronized-vs-reentrantlock.html
 http://www.javaspecialist.ru/2011/04/java.html
+https://www.ibm.com/developerworks/ru/library/j-jtp10264/
+https://www.ibm.com/developerworks/ru/library/j-jtp11234/
 https://habr.com/ru/post/187854/
 https://habr.com/ru/post/319036/
 https://habr.com/ru/post/196548/
