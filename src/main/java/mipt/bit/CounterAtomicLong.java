@@ -3,7 +3,7 @@ package mipt.bit;
 import java.util.concurrent.atomic.AtomicLong;
 
 public class CounterAtomicLong implements Counter {
-    private AtomicLong value = new AtomicLong(0);
+    private volatile AtomicLong value = new AtomicLong(0);
     @Override
     public void increment() {
         this.value.incrementAndGet();

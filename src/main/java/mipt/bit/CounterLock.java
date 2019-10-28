@@ -5,7 +5,9 @@ import java.util.concurrent.locks.ReentrantLock;
 
 public class CounterLock implements Counter {
     Lock lock = new ReentrantLock();
-    private long value;
+    //    По идее, при выходе из синхронайза все локальные переменные передаются в основную память Ram
+//    Можно ли было здесь обойтись без волатайла?
+    private volatile long value;
     @Override
     public void increment() {
         lock.lock();

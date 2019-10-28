@@ -7,7 +7,7 @@ public class CounterBakery implements Counter {
 
     private int threads = 2;
 
-    private long value;
+    private volatile long value;
 
     private List<Integer> ticket;
 
